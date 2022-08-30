@@ -60,10 +60,6 @@ html,body {
         align-items: center;
     }
 
-    .top-menu .menu-links{
-        padding: 0.8rem;
-    }
-
     .top-menu .site-settings {
         display: flex;
     }
@@ -120,7 +116,7 @@ html,body {
         }
 
     .top-menu .menu-links .social-media{
-        margin: 1rem;
+        margin-left: 1.2rem;
         font-size: var(--font-size-14);
     }
 
@@ -128,7 +124,7 @@ html,body {
             margin: 0 0.3rem;
         }
             .top-menu .menu-links .social-media a:last-child{
-                margin: 0 0 0 0.3rem;
+                margin: 0 0 0 0.1rem;
             }
 
 
@@ -180,22 +176,6 @@ html,body {
         .main-menu .menu-links .menu-link i{
             font-size:var(--font-size-16) ;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

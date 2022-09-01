@@ -11,8 +11,9 @@
     <link href="css/style-test.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Whole bar at the top -->
     <header>
+        <!-- Language / site choices -->
         <div class="top-menu"> 
             <div class="container">
                 <div class="site-settings" >
@@ -53,41 +54,56 @@
             </div>
         </div>
 
-        <div class="main-menu">
+
+<!-- Main Menu Logo/Choices -->
+
+    <div class="main-menu">
+        <div class="container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
+            </div>
+            <div class="search"></div>
+            <div class="menu-links">
+                <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i>My account </a>
+                <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
+                <a class="menu-link"href=""><i class="fa-regular fa-shuffle"></i></a>
+                <a class="menu-link" href=""><i class="fa-regular fa-cart-shopping me-1"></i>
+                    <span id="cart-total">€99999.00</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom menu MOBILE -->
+        <div class="menu-bottom-m">
+            <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i></a>
+            <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
+            <a class="menu-link"href=""><i class="fa-regular fa-shuffle"></i></a>
+            <a class="menu-link" href=""><i class="fa-regular fa-cart-shopping me-1"></i>
+            </a>
+        </div>
+        
+
+    <!-- Categories & Special offer button -->
+        <nav>
             <div class="container">
-                <div class="brand">
-                    <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
+                <div class="browse-categories">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>
+                            <i class="fa-regular fa-bars me-3"></i>Browse Categories
+                        </span>
+                        <i class="fa-solid fa-chevron-down ms-4"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Computers</a></li>
+                        <li><a class="dropdown-item" href="#">TV & Display</a></li>
+                    </ul>
                 </div>
-                <div class="search"></div>
-                <div class="menu-links">
-                    <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i>My account </a>
-                    <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
-                    <a class="menu-link"href=""><i class="fa-regular fa-shuffle"></i></a>
-                    <a class="menu-link" href=""><i class="fa-regular fa-cart-shopping me-1"></i>
-                        <span id="cart-total">€99999.00</span>
-                    </a>
+                <div class="special-offer">
+                    <button class="btn btn-theme">SPECIAL OFFER</button>
                 </div>
             </div>
-            <nav>
-                <div class="container">
-                    <div class="browse-categories">
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>
-                                    <i class="fa-regular fa-bars me-3"></i>Browse Categories
-                                </span>
-                                <i class="fa-solid fa-chevron-down ms-4"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Computers</a></li>
-                              <li><a class="dropdown-item" href="#">TV & Display</a></li>
-                            </ul>
-                    </div>
-                    <div class="special-offer">
-                        <button class="btn btn-theme">SPECIAL OFFER</button>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        </nav>
+    </div>
     </header>
 
 

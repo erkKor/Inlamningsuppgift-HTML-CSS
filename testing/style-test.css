@@ -62,7 +62,7 @@ html,body {
 
 
 
-/* top-menu */
+/* Top Menu -- Language/currency, Sitelinks & Socialmedia */
 .top-menu{
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -152,26 +152,15 @@ html,body {
 .main-menu{
     background-color: var(--color-white);
 }
-
-    .main-menu > .container{
-        display: none;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 2.2rem;
-        padding-bottom: 2.2rem;
-    }
-
     .main-menu .brand{
+        margin: 1rem 1rem;
         flex: 2;
     }
     .main-menu .search{
         flex: 4;
     }
     .main-menu .menu-links{
-        flex: 3;
-        display: flex;
-        justify-content: end;
-        align-items: center;
+        display: none;
     }
         .main-menu .menu-links .menu-link {
             text-decoration: none;
@@ -247,62 +236,63 @@ html,body {
         padding-top: 2.2rem;
         padding-bottom: 2.2rem;
     }
-
-    .main-menu > nav > .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1rem;
-            /* HÄR ÄR VI #2 */
-        }
-    /* vvvv Bytte plats på dessa element vvvv */ 
-    .main-menu nav .browse-categories{
-        flex: 2;
-    }
-        .main-menu nav .browse-categories button{
-            background-color: var(--color-theme);
-            border: none;
-            color: var(--color-white);
-            font-size: 1rem;
-            width: 100%;
+        .main-menu .menu-links{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding:0.7rem 1rem;
-        }
-            .main-menu nav .browse-categories button:hover{
-                background-color: var(--color-theme-dark);
-                color: var(--color-white);
-            }
-
-
-        .main-menu nav .browse-categories button span{
-            display: flex;
-            align-items: center;
-        }
-            .main-menu nav .browse-categories button > span > i{
-                font-size: 1.3em;
-            }
-        
-        .main-menu nav .special-offer{
-            flex: 7;
-            display: flex;
+            flex: 3;
             justify-content: end;
             align-items: center;
-        } 
-        /* ^^^^ Bytte plats på dessa element ^^^^  */ 
+        }
+        /* vvvv Bytte plats på dessa element vvvv */ 
+    .main-menu > nav > .container{
+        display: flex;
+    }
+        .main-menu nav .browse-categories{
+            flex: 2;
+        }
+            .main-menu nav .browse-categories button{
+                background-color: var(--color-theme);
+                border: none;
+                color: var(--color-white);
+                font-size: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:0.7rem 1rem;
+            }
+                .main-menu nav .browse-categories button:hover{
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
+                }
+
+
+            .main-menu nav .browse-categories button span{
+                display: flex;
+                align-items: center;
+            }
+                .main-menu nav .browse-categories button > span > i{
+                    font-size: 1.3em;
+                }
+            
+            .main-menu nav .special-offer{
+                flex: 7;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            } 
+            /* ^^^^ Bytte plats på dessa element ^^^^  */ 
 
     
 }
+
+
+
 
 @media(min-width:992px) {
     .top-menu .menu-links .site-links{
         display: inline;
     }
 
-    .main-menu > nav > .container{
-        
-    }
 }
 
 @media(max-width:1200px) {

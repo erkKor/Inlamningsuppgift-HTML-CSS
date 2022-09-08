@@ -210,7 +210,7 @@ html,body {
             
             /* Hamburger menu inside Bottom menu MOBILE */
             
-            .mobile-menu {
+            .popup-menu-m {
                 height: 87%;
                 width: 100%;
                 display: none;
@@ -221,52 +221,61 @@ html,body {
                 background-color: rgba(32,211,194, 0.9);
                 background-color: var(--color-theme);
               }
+                  
+                    .popup-menu-m .container a {
+                    padding: 4px;
+                    text-decoration: none;
+                    font-size: 1.7rem;
+                    color: var(--color-theme-dark);
+                    display: block;
+                    transition: 0.3s;
+                    text-align: start;
+                   
+                  }
+                    .popup-menu-m .container a:first-child {
+                        font-size: 1.5rem;
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                        color: rgb(14, 21, 61, 0.6);
+                        
+                    }
+                    /* .mobile-menu .mobile-menu-content a:nth-child(6) {
+                        padding-top:2rem;
+                        
+                    } */
+                  
+                  .popup-menu-m a:hover, .popup-menu-m a:focus {
+                    color: #f1f1f1;
+                  }
 
-                .mobile-menu .dropdown-mobile-menu button {
+                .popup-menu-m .container button {
                     background-color: var(--color-theme);
                     border: none;
                     display: block;
-                    padding-left: 1.2rem;
+                    font-size: 1.7rem;
+                    
                 }
+                    .popup-menu-m .container i {
+                        font-size: 1rem;
+                        margin-left: 1rem;
+                
+                    }
              
-                .mobile-menu .dropdown-menu .dropdown-item{
-                        padding:0;
+                .popup-menu-m .container .dropdown-theme{
+                        margin:0;
                         background-color: var(--color-theme);
                         border: none;
                         font-size: var(--font-size-14);
                 }
 
-            .mobile-menu-content {
-            position: relative;
-            width: 100%;
-            text-align: center;
+            .popup-menu-m .container .dropdown-mobile-menu .dropdown-list-items a{
+                padding: 0 4rem;
+                font-size: 1rem;
+         
+
             }
-              
-              .mobile-menu .mobile-menu-content a {
-                padding: 4px;
-                text-decoration: none;
-                font-size: 1.7rem;
-                color: var(--color-theme-dark);
-                display: block;
-                transition: 0.3s;
-                text-align: start;
-                padding-left: 1.2rem;
-              }
-                .mobile-menu .mobile-menu-content a:first-child {
-                    font-size: 1.5rem;
-                    padding-top: 2rem;
-                    padding-bottom: 2rem;
-                    color: rgb(14, 21, 61, 0.6);
-                    
-                }
-                /* .mobile-menu .mobile-menu-content a:nth-child(6) {
-                    padding-top:2rem;
-                    
-                } */
-              
-              .mobile-menu a:hover, .mobile-menu a:focus {
-                color: #f1f1f1;
-              }
+
+            
               
               
 

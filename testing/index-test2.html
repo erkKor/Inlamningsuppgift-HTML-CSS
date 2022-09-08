@@ -74,52 +74,7 @@
             </div>
         </div>
 
-    <!-- Bottom menu MOBILE -->
-    <section>
-        <div class="menu-bottom-m">
-            <button class="button menu-link" id="myNavBtn" type="button" onclick="myFunction()" >
-                <i class="fa-regular fa-bars"></i>
-            </button>
-            <a class="menu-link" href="#"><i class="fa-regular fa-user"></i></a>
-            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-            <a class="menu-link"href="#"><i class="fa-regular fa-shuffle"></i></a>
-            <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i>
-            </a>
-        </div>
-                <!-- Hamburger menu choices -->
-        <div class="mobile-menu" id="mobileMenu" >
-            <div class="mobile-menu-content">
-                <a href="#">Home</a>
-                <a href="#">Newsletter</a>
-                <a href="#">Services</a>
-                <a href="#">FAQs</a>
-                <a href="#">Contact</a>
-                <div class="dropdown-mobile-menu">
-                    <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                    </button>
-                <ul id="currencies" style="" class="dropdown-menu dropdown-theme">
-                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                    <li><a class="dropdown-item" href="#">USD</a></li>
-                    <li><a class="dropdown-item" href="#">SEK</a></li>
-                </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-          <script>
-                function myFunction() {
-                    var x = document.getElementById("mobileMenu");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                }
-            
-            </script>
-    <!-- Categories & Special offer button -->
+        <!-- Categories & Special offer button -->
         <nav>
             <div class="container">
                 <div class="browse-categories">
@@ -142,7 +97,53 @@
     </div>
     </header>
 
+    <!-- Bottom menu MOBILE -->
+    <section>
+        <div class="menu-bottom-m">
+            <button class="button menu-link" id="myNavBtn" type="button" onclick="myFunction()" >
+                <i class="fa-regular fa-bars"></i>
+            </button>
+            <a class="menu-link" href="#"><i class="fa-regular fa-user"></i></a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="menu-link"href="#"><i class="fa-regular fa-shuffle"></i></a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i>
+            </a>
+        </div>
+                <!-- Hamburger menu choices -->
+        <div class="popup-menu-m" id="mobileMenu" >
+            <div class="container">
+                <a href="#">Home</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Services</a>
+                <a href="#">FAQs</a>
+                <a href="#">Contact</a>
+                <div class="dropdown-mobile-menu">
+                    <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                    </button>
+                <div class="dropdown-list-items">
+                    <ul id="currencies" style="padding:0;" class="dropdown-menu dropdown-theme">
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">SEK</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <script>
+        function myFunction() {
+            var x = document.getElementById("mobileMenu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     
+    </script>
     
      
 

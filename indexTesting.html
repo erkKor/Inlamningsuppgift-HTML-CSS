@@ -54,10 +54,7 @@
                 </div>
             </div>
         </div>
-
-
 <!-- Main Menu Logo/Choices -->
-
     <div class="main-menu">
         <div class="container">
             <div class="brand">
@@ -73,8 +70,7 @@
                 </a>
             </div>
         </div>
-
-        <!-- Categories & Special offer button -->
+        <!-- @Bigger Screens Categories & Special offer button -->
         <nav>
             <div class="container">
                 <div class="browse-categories">
@@ -117,32 +113,53 @@
                 <a href="#">Services</a>
                 <a href="#">FAQs</a>
                 <a href="#">Contact</a>
-                <div class="dropdown-mobile-menu">
-                        <button class="show" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="selected-currency">Currency</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                        </button>
-                    <div class="dropdown-list-items">
-                        <ul id="currencies" style="padding:0;" class="dropdown-menu dropdown-theme">
-                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                <div>
+                    <ul class="accordion accordion-flush" id="accordionFlush">
+                        <li class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCategories">
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCategories" aria-expanded="false" aria-controls="flush-collapseCategories">
+                                <span>Browse Categories</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCategories" class="" aria-labelledby="flush-headingCategories" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body accordion-theme categories">
+                            <li><a class="dropdown-item" href="#">Clothes for men</a></li>
+                            <li><a class="dropdown-item" href="#">Clothes for women</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="accordion-item aco-btn">
+                        <h2 class="accordion-header" id="flush-headingLanguage">
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLanguage" aria-expanded="false" aria-controls="flush-collapseLanguage">
+                                <span>Language</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseLanguage" class="" aria-labelledby="flush-headingLanguage" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body accordion-theme language">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Swedish</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="accordion-item aco-btn">
+                        <h2 class="accordion-header" id="flush-headingCurrency">
+                            <button  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCurrency" aria-expanded="false" aria-controls="flush-collapseCurrency">
+                                <span>Currency</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCurrency" class="accordion-collapse collapse" aria-labelledby="flush-headingCurrency" data-bs-parent="#accordionFlush">
+                            <ul class="accordion-body accordion-theme currency">
+                            <li><a class="dropdown-item" href="#">Euro</a></li>
                             <li><a class="dropdown-item" href="#">USD</a></li>
                             <li><a class="dropdown-item" href="#">SEK</a></li>
-                        </ul>
-                    </div>
-                    <button class="show" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span id="selected-language">Language</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                    </button>
-                    <div class="dropdown-list-items">
-                        <ul id="currencies" style="padding:0;" class="dropdown-menu dropdown-theme">
-                            <li><a class="dropdown-item" href="#">EN - English</a></li>
-                            <li><a class="dropdown-item" href="#">SWE - Svenska</a></li>
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
                 </div>
-                
             </div>
         </div>
     </section>
-
 
     <!-- <section class="webshop-info">
         <div class="container">

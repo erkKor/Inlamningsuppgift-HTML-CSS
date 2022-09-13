@@ -84,10 +84,58 @@ html,body {
     }
     .section-title p{
         margin: 1rem 0;
-        padding:3rem 0;
+        padding-bottom: 3rem;
     }
 
-/* top-menu */
+
+.card-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .card{
+        height: 400px;
+        width:25%;
+    }
+    .card img{
+        flex-shrink: 0;
+        min-width: 100%;
+    }
+
+    .card-menu{
+        position: absolute;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        border: 1px solid black;
+        border-radius: 22px;
+        font-size: 20px;
+        background-color: white;
+        right:15px;
+        top:10px;
+    }
+        .card-menu li a{
+            color: #AAAAAA;
+        }
+            .card-menu li a:hover{
+                color: var(--color-theme);
+            }
+
+    .instock{
+        color: var(--color-theme);
+    }
+    .fa-shopping-cart{
+        font-size: 0.9em;
+    }
+
+.card-background{
+    background-color: var(--color-theme-dark);
+    color: white;
+    height: 10%;
+    padding: 7px 20px;
+}
+
+/* Top-menu  Currency/Language and Sitelinks/Socialmedia */
 .top-menu{
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -154,9 +202,11 @@ html,body {
         color:var(--color-white);
         text-decoration: none;
         margin: 1.4rem;
+        transition: color 0.4s;
     }
         .top-menu .menu-links a:hover{
             color: var(--color-theme-dark);
+            
         }
 
     .top-menu .menu-links .social-media{
@@ -203,6 +253,7 @@ html,body {
             text-decoration: none;
             color:var(--color-theme-dark);
             margin: 0 0.8rem;
+            transition: color 0.4s;
         }
             .main-menu .menu-links .menu-link:hover {
                 color: var(--color-theme);
@@ -227,6 +278,7 @@ html,body {
                 top:-1.3rem;
                 left:0.9rem;
                 background-color: var(--color-theme);
+                transition: background-color 0.4s;
             }
             .main-menu .menu-links #cart:hover .badge{
                 background-color: var(--color-theme-dark);
@@ -369,6 +421,7 @@ html,body {
     grid-template-rows:repeat(5, minmax(100px, 200px));
     gap: 0.8rem;
     justify-content: center;
+    padding-bottom: 7rem;
 }
     .shop-by-category .category-box{
         background-color: var(--color-gray-1);
@@ -390,6 +443,7 @@ html,body {
             bottom: 0;
             left:0;
             height: 38px;
+            transition: height 0.4s, background-color 0.4s;            
         }
             .shop-by-category .category-box .category-box-title span{
                 display:block;
@@ -403,12 +457,11 @@ html,body {
                 color: var(--color-theme-dark);
                 cursor: pointer;
                 height: 75px;
+                
              }
                 .shop-by-category .category-box:hover{
                     cursor: pointer;
             }
-
-
 
 
 

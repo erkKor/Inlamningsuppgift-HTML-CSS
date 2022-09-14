@@ -42,8 +42,7 @@ body {
     color: var(--color-theme-dark);
 }
 
-/* general */
-
+/* General classes */
 .btn-theme {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -52,11 +51,10 @@ body {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
 }
-
-.btn-theme:hover {
-    background-color: var(--color-theme-dark);
-    color: var(--color-white);
-}
+    .btn-theme:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
 
 .btn-white {
     background-color: var(--color-white);
@@ -66,31 +64,39 @@ body {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
 }
-
-.btn-white:hover {
+    .btn-white:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+.btn-dark {
     background-color: var(--color-theme-dark);
     color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
 }
+    .btn-dark:hover {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+    }
 
 .section-title {
     color: var(--color-theme-dark);
     text-align: center;
 }
-
-.section-title h1 {
-    font-family: var(--font-play);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-36);
-}
-
-.section-title h1 span {
-    color: var(--color-theme);
-}
-
-.section-title p {
-    margin: 1rem 0;
-    padding-bottom: 3rem;
-}
+    .section-title h1 {
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+    }
+        .section-title h1 span {
+            color: var(--color-theme);
+        }
+    .section-title p {
+        margin: 1rem 0;
+        padding-bottom: 3rem;
+    }
 
 
 /* Top-menu  Currency/Language and Sitelinks/Socialmedia */
@@ -476,7 +482,7 @@ body {
                     }
                         .new-arrivals .card:hover .card-menu{
                                 top:20px;
-                            }
+                        }
 
     .new-arrivals .card .card-body{
         position: absolute;
@@ -522,8 +528,6 @@ body {
             margin: 0;
         }
 
-
-
     .new-arrivals .card .card-background {
         position:absolute;
         bottom: 0;
@@ -539,6 +543,49 @@ body {
         }
                 
 
+
+.new-customer-offer{
+    margin-top: 10rem;
+    background-color: var(--color-gray-3);
+    height: 400px;
+}
+    .new-customer-offer .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .new-customer-offer .newcu-discount{
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            width: 255px;
+            height:400px;
+            /* font sizes 60, 36 ,16 */
+            
+        }
+        .new-customer-offer .newcu-discount h1{
+            font-size: 60px;
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+        }
+        
+            .new-customer-offer .newcu-discount h1 span{
+                font-size: 36px;
+            }
+            
+            .new-customer-offer .newcu-discount .newcu-btn{
+                flex-wrap: nowrap;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+    .new-customer-offer .newcu-learn-more{
+     
+    }
+    
+        .new-customer-offer .newcu-learn-more p{
+        max-width: 445px;
+        }
+        
 
 
 

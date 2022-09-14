@@ -242,19 +242,19 @@ html,body {
     align-items: center;
     z-index: 2;
     }
-    .menu-bottom-m .menu-link{
-        text-decoration: none;
-        color: var(--color-theme-dark);
-        font-size: 2rem;
-    }
-    .menu-bottom-m .button{
-        border: none;
-        margin-top: 3.5px;
-        padding:0;
-        background-color: white;
-    }
+        .menu-bottom-m .menu-link{
+            text-decoration: none;
+            color: var(--color-theme-dark);
+            font-size: 2rem;
+        }
+        .menu-bottom-m .button{
+            border: none;
+            margin-top: 3.5px;
+            padding:0;
+            background-color: white;
+        }
 
- /* Hamburger menu inside Bottom menu MOBILE */
+ /* Popupm menu inside Bottom hamburger menu MOBILE */
 .popup-menu-m {
     height: 87%;
     width: 100%;
@@ -268,23 +268,23 @@ html,body {
     font-weight: var(--font-weight-bold);
     }
         .popup-menu-m .container a {
-        text-decoration: none;
-        font-size: 1.7rem;
-        color: var(--color-theme-dark);
-        display: block;
-        transition: 0.3s;
-        text-align: start;
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: var(--color-theme-dark);
+            display: block;
+            transition: 0.3s;
+            text-align: start;
         }
-        .popup-menu-m .container > a:first-child {
-            font-size: 1.5rem;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            color: rgb(14, 21, 61, 0.6);
-            
-        }
-        .popup-menu-m a:hover, .popup-menu-m a:focus {
-            color: #f1f1f1;
-        }
+            .popup-menu-m .container > a:first-child {
+                font-size: 1.5rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                color: rgb(14, 21, 61, 0.6);
+                
+            }
+                .popup-menu-m a:hover, .popup-menu-m a:focus {
+                    color: #f1f1f1;
+                }
 
             .popup-menu-m button {
                 background-color: var(--color-theme);
@@ -297,16 +297,16 @@ html,body {
                 .popup-menu-m button span {
                     font-size: 1.7rem;
                 }
-                .popup-menu-m .aco-btn button > span {
+            .popup-menu-m .aco-btn button > span {
                     font-size: 1.3rem;
                     color: rgb(14, 21, 61, 0.6);
                 }
-                .popup-menu-m .aco-btn button > i {
-                    color: rgb(14, 21, 61, 0.6);
-                    font-size: 0.8rem;
-                }
-                
-    /* Accordion*/
+                    .popup-menu-m .aco-btn button > i {
+                        color: rgb(14, 21, 61, 0.6);
+                        font-size: 0.8rem;
+                    }
+                    
+    /* Accordion inside Hamburger menu MOBILE*/
     .popup-menu-m .accordion{
         padding:0;
     }
@@ -343,43 +343,75 @@ html,body {
         border-top: 1px solid var(--color-gray-3);
         border-bottom: 1px solid var(--color-gray-3);
     }    
-        .main-menu > nav > .container{
+        .main-menu > nav{
             display: none;
         }
+            .main-menu > nav > .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+            }
         
+        .main-menu nav .browse-categories {
+            flex: 2;
+        }
+            .main-menu nav .browse-categories button {
+                background-color: var(--color-theme);
+                border: none;
+                color: var(--color-white);
+                font-size: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 1rem;
+                transition: all 0.3s ease-in-out;
+            }
+                .main-menu nav .browse-categories button:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
+                }
+            .main-menu nav .browse-categories button span {
+                display: flex;
+                align-items: center;
+            }
+                .main-menu nav .browse-categories button>span>i {
+                    font-size: 1.3em;
+                }
+        
+        .main-menu nav .special-offer {
+            flex: 7;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
 
 /* Showcase */
 .showcase{
     background-color: var(--color-gray-3);
-   
 }
-    .showcase .container{
+    .showcase .container .showcase-body{
         text-align: center;
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
     }
-    
+        .showcase img{
+            display: none;
+        }
         .showcase .showcase-body h1{
             font-size: 3.5rem;
             font-family: var(--font-play);
         }
-                 .showcase .showcase-body h1 strong{
+                .showcase .showcase-body h1 strong{
                 font-weight: var(--font-weight-bold);
                 color:var(--color-theme);
+                display: block;
             }
-        
         .showcase .showcase-body p{
-            margin: 2rem 0;   
-            }
-
-    .showcase img{
-        display: none;
-    }
-
-
-
-
-
+            margin: 2rem 0rem;   
+        }
+    
 /* Webshop-info */
 .webshop-info{
     padding: 2rem 0;
@@ -417,10 +449,11 @@ html,body {
     color: var(--color-theme);
     font-size: 1rem;
     font-weight: var(--font-weight-medium);
+    
     }
-
         .webshop-info .info-box:hover h1{
             color:var(--color-white);
+            
         }
 
 
@@ -583,92 +616,46 @@ html,body {
 /* Media */
 
 @media (min-width: 578px) {
-    .top-menu .menu-links{
-        display: block;
-    }
     .top-menu > .container{
         justify-content: space-between;
     }
+}   
 
-    .menu-bottom-m{
-        display: none;
-    }
-    
-    .main-menu > .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 2.2rem;
-        padding-bottom: 2.2rem;
-    }
-        .main-menu .menu-links{
-            display: flex;
-            flex: 3;
-            justify-content: end;
-            align-items: center;
-        }
-    .main-menu > nav > .container{
-        display: flex;
-        margin: 1rem 2rem;
-    }
-        .main-menu nav .browse-categories{
-            flex: 2;
-        }
-            .main-menu nav .browse-categories button{
-                background-color: var(--color-theme);
-                border: none;
-                color: var(--color-white);
-                font-size: 1rem;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding:0.7rem 1rem;
-            }
-                .main-menu nav .browse-categories button:hover{
-                    background-color: var(--color-theme-dark);
-                    color: var(--color-white);
-                }
-
-
-            .main-menu nav .browse-categories button span{
-                display: flex;
-                align-items: center;
-            }
-                .main-menu nav .browse-categories button > span > i{
-                    font-size: 1.3em;
-                }
-            
-            .main-menu nav .special-offer{
-                flex: 7;
-                display: flex;
-                justify-content: end;
-                align-items: center;
-            } 
-            /* ^^^^ Bytte plats på dessa element ^^^^  */ 
-
-    
-}
-
-
-        
 @media(min-width:768px) {
-    
 .top-menu{
     display: flex;
 }
-
+.top-menu .menu-links{
+    display: block;
+}
+.menu-bottom-m{
+    display: none;
+}
+.main-menu > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+    .main-menu .menu-links{
+        display: flex;
+        flex: 3;
+        justify-content: end;
+        align-items: center;
+    }
+.main-menu > nav {
+    display: flex;
+}
 .showcase .container{
     text-align: left;
 }
-
 .webshop-info .container{
     max-width: 1600px;
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 1.4rem;
     justify-content: center;
-    
 }
 .webshop-info .info-box{
     background-color: var(--color-theme-light);
@@ -736,7 +723,6 @@ html,body {
 }
 .showcase img{
     display: block;
-    width: 50%;
 }
 
 .webshop-info .container{

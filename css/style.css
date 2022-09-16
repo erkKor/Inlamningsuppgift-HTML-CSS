@@ -647,11 +647,6 @@ body {
         width: 100%;
        
     }
-        .top-sellers .topseller-boxes{
-            height: 100%;
-            width: 100%;
-        } 
-
         .top-sellers .card{
             height: 100%;
             width: 100%;
@@ -669,7 +664,7 @@ body {
             }
 
         .top-sellers .big-card .card .card-background{
-            height: 7.33%;
+            height: 7.22%;
         }  
             .top-sellers .big-card .card:hover .card-background{
                 height: 100%;

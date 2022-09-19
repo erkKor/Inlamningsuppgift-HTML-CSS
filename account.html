@@ -105,17 +105,58 @@
     </section>
 
     <section class="signup-signin">   
-        <div class="container">
+        <div class="container form-theme">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Login</h1>
+                    <h1 class="card-title">LOGIN</h1>
+                    <form id="signinForm" class="long-form">
+                        <div class="my-4">
+                            <label for="signin_email">Email adress <span class="text-theme">*</span></label>
+                            <input id="signin_email" type="email" autocomplete="email" class="" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="signin_password">Password <span class="text-theme">*</span></label>
+                            <input id="signin_password" type="password" autocomplete="current-password" class="" required>
+                        </div>
+                        <div class="mb-4 d-grid">
+                            <button type="submit" class="btn btn-lg btn-theme" >LOG IN</button>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <input id="sigin_rememberMe" type="checkbox">
+                                <label for="sigin_rememberMe" class="w">Remember me</label>
+                                <a href="">Lost your password?</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">REGISTER</h1>
-                    <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
-                    <p class="card-text">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+                    <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+                    <form id="signupForm" class="long-form">
+                        <div class="mb-4">
+                            <label for="signup_firstName">Firstname <span class="text-theme">*</span></label>
+                            <input id="signup_firstName" type="text" autocomplete="given-name" class="" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="signup_lastName">Lastname <span class="text-theme">*</span></label>
+                            <input id="signup_lastName" type="text" autocomplete="family-name" class="" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="signup_email">Email adress <span class="text-theme">*</span></label>
+                            <input id="signup_email" type="email" autocomplete="email" class="" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="signup_password">Password <span class="text-theme">*</span></label>
+                            <input id="signup_password" type="password" autocomplete="current-password" class="" required>
+                        </div>
+                        <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="" class="">privacy policy.</a></p>
+                        <div class="mb-4 d-grid">
+                            <button type="submit" class="btn btn-lg btn-theme" >REGISTER</button>
+                        </div>
+                    </form>
                 </div>
             </div>
            

@@ -111,6 +111,57 @@ body {
     color:var(--color-theme);
 }
 
+        .form-theme .card{
+            padding: 1.5rem;
+            border: none;
+            border-radius: var(--border-radius-small);
+            background-color: var(--color-gray-4);
+        }
+    
+        .form-theme .card .card-body h1{
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-medium);
+                font-size: 1.5rem;
+                color: var(--color-dark);
+            }
+    
+            .form-theme .card .card-body p>a{
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                text-decoration: none;
+               
+            }
+            .form-theme .card .card-body p>a:hover{
+                    color: var(--color-dark);
+                    text-decoration: underline;
+                }
+                .form-theme .card .card-body .card-text{
+                margin:1.5rem 0;
+                line-height: 2;
+            }
+            .form-theme .card .card-body .card-text.text-small{
+                color: var(--color-gray-5);
+                font-size: 0.875rem;
+            }
+    
+    
+    .form-theme form input[type=text], 
+    input[type=email], 
+    input[type=password]{
+        display: block;
+        width: 100%;
+        border:none;
+        border-radius: 3px;
+        padding: 0.5rem 0.7rem;
+        margin: 0.3rem 0;
+    }
+    
+    .form-theme form input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+        outline:0;
+        box-shadow: 0 0 3px 0 var(--color-gray-0);
+    }
+
+
 /* Top-menu  Currency/Language and Sitelinks/Socialmedia */
 .top-menu {
     background-color: var(--color-theme);
@@ -726,39 +777,16 @@ body {
                 text-decoration: underline;
             }
 
-
-.signup-signin{
-margin-top: 6rem;
-}
-
-    .signup-signin .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-    }
-    .signup-signin .card{
-        padding: 1.5rem;
-        border: none;
-        border-radius: var(--border-radius-small);
-        background-color: var(--color-gray-4);
-    }
-        .signup-signin .card .card-body h1{
-            font-family: var(--font-roboto);
-            font-weight: var(--font-weight-medium);
-            font-size: 1.5rem;
-            color: var(--color-dark);
-        }
-        .signup-signin .card .card-body .card-text{
-            margin:1.5rem 0;
-            line-height: 2;
-        }
-        .signup-signin .card .card-body .card-text.text-small{
-            color: var(--color-gray-5);
-            font-size: 0.875rem;
-        }
-
-
-
+            .signup-signin{
+                margin-top: 6rem;
+                }
+                
+                .signup-signin .container{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 2rem;
+                        align-items: start;
+                    }
 /* ACCOUNT PAGE */
 
 

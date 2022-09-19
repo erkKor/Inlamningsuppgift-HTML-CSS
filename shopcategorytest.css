@@ -1130,7 +1130,7 @@ padding: 0;
         
 
     .top-sellers .big-card .card .card-body{
-        height: 6.8%;
+        /* height: 6.8%; */height: 50px;
     }
         .top-sellers .big-card .card:hover .card-body{
             height: 21%;
@@ -1144,10 +1144,11 @@ padding: 0;
         }  
 
     .top-sellers .card .card-body{
-        height: 14%;
+        /* height: 14%; */
+        height: 50px;
     }
         .top-sellers .card:hover .card-body{
-            height: 45%;
+            height: 150px;
         }
         .top-sellers .card .card-body p, .text-theme{
             display: block;

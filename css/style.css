@@ -776,7 +776,6 @@ html,body {
     background-color: var(--color-theme-dark);
     color: white;
     height: 185px;
-    margin-bottom: 300px;
 }
     .flash-sale .container{
         display: flex;
@@ -899,12 +898,13 @@ html,body {
 /* Subscribe Now*/
 .subscribe-now{
     margin-top: 6rem;
-    height: 300px;
+    height: 160px;
     background-color: var(--color-gray-4);
 }
     .subscribe-now .container{
         display: flex;
         justify-content: space-between;
+        padding: 0;
     }
     .subscribe-box{
         display: flex;
@@ -914,25 +914,26 @@ html,body {
         .subscribe-box h1 {
             font-family: var(--font-play);
             font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-36);
+            padding-left: 10px;
         }
             .subscribe-box h1 span {
                 color: var(--color-theme);
             }
         .subscribe-box p{
-            max-width: 60%;
-            padding: 0.5rem 0;
+            padding-left: 10px;
+            font-size: 12px;
         }
         #subscribeForm{
             border-radius: var(--border-radius-medium);
             height: 45px;
             position: relative;
+            padding-left:5px;
         }
             #subscribeForm input{
                 position: absolute;
                 border-radius: var(--border-radius-medium);
                 height: 100%;
-                width: 70%;
+                width: 95%;
                 outline: none;
                 border: 1px solid var(--color-gray-2);
                 font-size: 0.9rem;
@@ -940,8 +941,8 @@ html,body {
             }
             #subscribeForm button{
                 position: absolute;
-                top:3px;
-                left:calc(60% - 56px);
+                top:3.3px;
+                left:55.7%;
                 height: 85%;
                 background-color:var(--color-theme);
                 color: var(--color-white);
@@ -950,14 +951,11 @@ html,body {
                 padding:0 1.5rem;
                 transition: 0.3s ease-in-out;
             }
-               #subscribeForm button:hover{
-                    background-color: var(--color-theme-dark);
-                }
 
     .subscribe-now .gray-box{
         background-color: var(--color-gray-1);
-        height: 300px;
-        width: 50%;
+        height: 160px;
+        width: 130px;
     }
 
 /* Footer */
@@ -1258,6 +1256,7 @@ html,body {
 
 .new-customer-offer{
     height: 400px;
+    margin-top: 10rem;
 }
     .new-customer-offer .container{
         flex-direction: row;
@@ -1296,6 +1295,7 @@ html,body {
 
 .flash-sale{
     height: 400px;
+    margin-top: 4rem;
 }
     .flash-sale .container{
         display: flex;
@@ -1321,7 +1321,7 @@ html,body {
                 font-weight: var(--font-weight-medium);
                 margin-top:1rem;
             }
-
+            
     .flash-sale .flash-timer {
         padding-top:5.3rem;
         }
@@ -1346,7 +1346,36 @@ html,body {
             background-color: var(--color-theme);
         }
 
+.subscribe-now{
+    margin-top: 6rem;
+    height: 300px;
+}
+    .subscribe-now .container{
+        padding: 0 12px;
+    }
+        .subscribe-box h1 {
+            font-size: var(--font-size-36);
+            padding: 0;
+        }
+        .subscribe-box p{
+            max-width: 60%;
+            padding: 0.5rem 0.2rem;
+        }
+            #subscribeForm input{
+                width: 70%;
+            }
+            #subscribeForm button{
+                top:3px;
+                left:47.4%;
+            }
+                #subscribeForm button:hover{
+                    background-color: var(--color-theme-dark);
+                }
 
+    .subscribe-now .gray-box{
+        height: 300px;
+        width: 50%;
+    }
 
 
 }

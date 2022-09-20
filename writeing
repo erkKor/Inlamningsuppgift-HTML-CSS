@@ -1,0 +1,70 @@
+.flash-sale{
+    margin-top: 8rem;
+    background-color: var(--color-theme-dark);
+    color: white;
+    height: 400px;
+}
+    .flash-sale .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .flash-sale .flash-sale-banner{
+            background-color: var(--color-theme);
+            height: 250px;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;;
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+            .flash-sale .flash-sale-banner h1{
+                font-size: 60px;
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                line-height: 60px;
+            }
+            .flash-sale .flash-sale-banner p{
+                font-size: 22px;
+                font-weight: var(--font-weight-medium);
+                margin-top: 1rem;
+            }
+
+    .flash-sale .flash-timer {
+        text-align: center;
+        justify-content: center;
+        padding-top:5.3rem;
+        }
+        .flash-sale .flash-timer .timer-circles{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            .flash-sale .flash-timer .timer-circles .flash-timer-circle{
+                background-color: white;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                outline:3px dashed var(--color-theme);
+                color: var(--color-theme);
+                line-height: 10px;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+                .flash-sale .flash-timer .timer-circles .flash-timer-circle h1{
+                    font-family: var(--font-play);
+                    font-weight: var(--font-weight-bold);
+                    padding-top: 1rem;
+                    margin:0;
+                }
+                .flash-sale .flash-timer .timer-circles .flash-timer-circle p{
+                    color: black;
+                }        
+        .flash-sale .flash-timer button{
+            margin-top: 1.4rem;
+        }
+        .flash-sale .flash-timer > .btn-white:hover{
+            background-color: var(--color-theme);
+        }

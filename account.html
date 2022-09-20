@@ -60,7 +60,12 @@
                 <div class="brand">
                     <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
                 </div>
-                <div class="search"></div>
+                <div class="search">
+                    <form id="searchboxForm">
+                        <input id="query" type="text" placeholder="Search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
                 <div class="menu-links">
                     <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i>My account </a>
                     <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
@@ -109,7 +114,7 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">LOGIN</h1>
-                    <form id="signinForm" class="long-form">
+                    <form id="signinForm" class="">
                         <div class="my-4">
                             <label for="signin_email">Email adress <span class="text-theme">*</span></label>
                             <input id="signin_email" type="email" autocomplete="email" class="" required>
@@ -121,16 +126,26 @@
                         <div class="mb-4 d-grid">
                             <button type="submit" class="btn btn-lg btn-theme" >LOG IN</button>
                         </div>
-                        <div class="">
-                            <div class="">
-                                <input id="sigin_rememberMe" type="checkbox">
-                                <label for="sigin_rememberMe" class="w">Remember me</label>
+                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <input id="sigin_rememberMe" type="checkbox" class="me-2">
+                                    <label for="sigin_rememberMe">Remember me</label>
+                                </div>
                                 <a href="">Lost your password?</a>
+                        </div>
+                        <div class="external-logins">
+                            <div class="mb-4">
+                                <div class="label">OR LOGIN WITH</div>
+                                <div class="line"></div>
                             </div>
+                        </div>
+                        <div class="external-socialmedia-buttons">
+                            <button class="facebook-button"></button>
+                            <button class="google-button"></button>
+                        </div>
                         </div>
                     </form>
                 </div>
-            </div>
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">REGISTER</h1>
@@ -159,7 +174,6 @@
                     </form>
                 </div>
             </div>
-           
         </div>
     </section>
 

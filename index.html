@@ -12,7 +12,7 @@
 </head>
 <body>
      
-      <header>
+       <header>
         <div class="top-menu"> 
             <div class="container">
                 <div class="site-settings" >
@@ -60,9 +60,14 @@
                 <div class="brand">
                     <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
                 </div>
-                <div class="search"></div>
+                <div class="search">
+                    <form id="searchboxForm">
+                        <input id="query" type="text" placeholder="Search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
                 <div class="menu-links">
-                    <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i>My account </a>
+                    <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i>My account </a>
                     <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
                     <a class="menu-link"href=""><i class="fa-regular fa-shuffle"></i></a>
                     <a id="cart" class="menu-link" href="">
@@ -189,7 +194,7 @@
     </section> 
 
     <section class="new-arrivals">
-        <div class="container">
+        <div class="container clothes-card">
             <div class="section-title">
                 <h1>NEW <span>ARRIVALS</span></h1>
                 <img src="images/wave-line.svg" alt="waveline">
@@ -326,7 +331,7 @@
     </section>
 
     <section class="featured-products">
-    <div class="new-arrivals">
+    <div class="clothes-card">
         <div class="container">
             <div class="section-title">
                 <h1>FEATURED <span>PRODUCTS</span></h1>
@@ -487,7 +492,7 @@
                 <img src="images/wave-line.svg" alt="waveline">
                 <p>Check out our weekly top sellers in all category</p>
             </div>
-            <div class="new-arrivals row g-4">
+            <div class="clothes-card row g-4">
                 <div id="topseller-box-1" class="col big-card">
                     <div class="card">
                         <ul class="card-menu">
@@ -576,6 +581,28 @@
 
         </div>
     </section>
+
+
+    <section class="subscribe-now">
+        <div class="container">
+            <div class="subscribe-box">
+                <h1 class="">SUBSCRIBE <span>NOW</span></h1>
+                <p>Signup for awesome news about our new products and know our special discounts on products.</p>
+                <form id="subscribeForm">
+                    <input id="subscribe" type="text" placeholder="Enter email adress">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="gray-box"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+           <span>© Copyright 2022 Kenkata</span>
+        </div>
+    </footer>
+
 <!-- <div style="height: 4000px;"></div> -->
 </body>
 </html>

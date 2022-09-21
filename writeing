@@ -1,62 +1,127 @@
-.subscribe-now{
-    margin-top: 6rem;
-    height: 300px;
-    background-color: var(--color-gray-4);
-}
-    .subscribe-now .container{
-        display: flex;
-        justify-content: space-between;
+.signup-signin{
+    margin-top: 1.5rem;
     }
-    .subscribe-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
+    .signup-signin .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+        }
+        .signup-signin .card{
+            width: 90%;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+            .signup-signin .card .card-body{
+                padding: 0;
+                /* padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);*/
+            }
+        
+    .signup-signin .remember-me{
+        display: none;
+        align-items: center;
+        /* display: flex; */
     }
-        .subscribe-box h1 {
-            font-family: var(--font-play);
-            font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-36);
-        }
-            .subscribe-box h1 span {
-                color: var(--color-theme);
-            }
-        .subscribe-box p{
-            max-width: 60%;
-            padding: 0.5rem 0;
-        }
-        #subscribeForm{
-            border-radius: var(--border-radius-medium);
-            height: 45px;
-            position: relative;
-        }
-            #subscribeForm input{
-                position: absolute;
-                border-radius: var(--border-radius-medium);
-                height: 100%;
-                width: 70%;
-                outline: none;
-                border: 1px solid var(--color-gray-2);
-                font-size: 0.9rem;
-                padding-left: 1.2rem; 
-            }
-            #subscribeForm button{
-                position: absolute;
-                top:3px;
-                left:calc(60% - 56px);
-                height: 85%;
-                background-color:var(--color-theme);
-                color: var(--color-white);
-                border-radius:var(--border-radius-medium);
-                border: none;
-                padding:0 1.5rem;
-                transition: 0.3s ease-in-out;
-            }
-               #subscribeForm button:hover{
-                    background-color: var(--color-theme-dark);
-                }
+.signup-signin .remember-lostpw{
+    display: flex;
+    justify-content: center;
 
-    .subscribe-now .gray-box{
-        background-color: var(--color-gray-1);
-        height: 300px;
-        width: 50%;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+
+    /* .signup-signin .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            align-items: start;
+        } */
+#registerCard{
+    display: none;
+}
+
+
+.external-logins{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+    .external-logins .label{
+        background-color: var(--color-gray-4);
+        padding:0 0.8rem;
+        z-index: 2;
     }
+    .external-logins .line{
+        position: absolute;
+        top:10px;
+        left: 0;
+        right: 0;
+        border: 1px solid var(--color-gray-1);
+        z-index: -1;
+        opacity: 0.6;       
+}
+
+
+.external-socialmedia-buttons{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.external-socialmedia-buttons .facebook-button{
+    display: flex;
+    align-items: center;
+    background-color: #3B5998;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+}       
+
+.external-socialmedia-buttons .facebook-button span {
+    margin-right: auto;
+    margin-left: auto;
+}
+.external-socialmedia-buttons .facebook-button:hover{
+    background-color: #1c3864;
+}
+    .external-socialmedia-buttons .google-button{
+        display: flex;
+        align-items: center;
+        background-color: #4285F4;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        height: 45px;
+        color: white;
+        padding-left: 10px;
+        margin-bottom: 0.5rem;
+    }
+    .external-socialmedia-buttons .google-button span{
+        margin-right: auto;
+        margin-left: auto;
+    }
+        .external-socialmedia-buttons .google-button:hover{
+            background-color: #1c3864;
+        }
+
+
+.no-member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-member-btn{
+    background-color: var(--color-gray-4);
+    border: none;
+    color: var(--color-theme);
+    height: 45px;
+}

@@ -99,7 +99,7 @@
         </div>
     </header>
 
-    <section class="site-title">
+    <!-- <section class="site-title">
         <div class="container">
             <h1>My Account</h1>
             <ul class="site-title-breadcrumb">
@@ -107,11 +107,11 @@
                 <li>My Account</li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <section class="signup-signin">   
         <div class="container form-theme">
-            <div class="card">
+            <div class="card" id="loginCard">
                 <div class="card-body">
                     <h1 class="card-title">LOGIN</h1>
                     <form id="signinForm" class="">
@@ -126,10 +126,10 @@
                         <div class="mb-4 d-grid">
                             <button type="submit" class="btn btn-lg btn-theme" >LOG IN</button>
                         </div>
-                        <div class="mb-4 d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <input id="sigin_rememberMe" type="checkbox" class="me-2">
-                                    <label for="sigin_rememberMe">Remember me</label>
+                        <div class="remember-lostpw mb-4">
+                                <div class="remember-me">
+                                    <input id="signin_rememberMe" type="checkbox" class="me-2">
+                                    <label for="signin_rememberMe">Remember me</label>
                                 </div>
                                 <a href="">Lost your password?</a>
                         </div>
@@ -140,13 +140,23 @@
                             </div>
                         </div>
                         <div class="external-socialmedia-buttons">
-                            <button class="facebook-button"></button>
-                            <button class="google-button"></button>
+                            <button class="facebook-button">
+                                <img src="images/icons/fb-icon.svg" alt="">
+                                <span>Facebook</span>
+                            </button>
+                            <button class="google-button">
+                                <img src="images/icons/google-icon.svg" alt="">
+                                <span>Google</span>
+                            </button>
                         </div>
+                        <div class="no-member">
+                            <span>Not a member?</span>
+                            <button class="no-member-btn" onclick="registerShow()">Create account</button>
                         </div>
-                    </form>
+                     </form>
                 </div>
-            <div class="card">
+            </div>
+            <div class="card" id="registerCard">
                 <div class="card-body">
                     <h1 class="card-title">REGISTER</h1>
                     <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
@@ -171,13 +181,42 @@
                         <div class="mb-4 d-grid">
                             <button type="submit" class="btn btn-lg btn-theme" >REGISTER</button>
                         </div>
+                        <div class="no-member">
+                            <span>Already a member?</span>
+                            <button class="no-member-btn" onclick="registerShow()">Log in</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <script>
+        function expandBar() {
+            var x = document.getElementById("mobileMenu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
+        function registerShow() {
+            var x = document.getElementById("loginCard");
+            var y = document.getElementById("registerCard");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
+
+
+
+    </script>
 <!-- <div style="height: 4000px;"></div> -->
 </body>
 </html>

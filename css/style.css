@@ -128,6 +128,7 @@ html,body {
 .clothes-card .card img{
     height: 400px;
 }
+
 .clothes-card .card .card-menu {
         position: absolute;
         z-index: 1;
@@ -155,6 +156,37 @@ html,body {
                 .clothes-card .card:hover .card-menu{
                             top:20px;
                     }
+
+    .clothes-card .card .card-menu-textbox {
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        right: 2.6rem;
+        top: -2px;
+        height: 30px;
+        width: 90px;
+        background-color: var(--color-theme);
+        border-radius: 6px;
+        list-style: none;
+        color: var(--color-white);
+        text-align: center;
+        font-size: 14px;
+    }
+        .tri-right::before{
+            content: ' ';
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            left: 85px;
+            top:11px;
+            bottom: auto;
+            height: 8px;
+            width: 8px;
+            background-color: var(--color-theme);
+            transform: rotate(-45deg);
+        }
 
  .clothes-card .card .card-body{
     position: absolute;
@@ -249,33 +281,33 @@ html,body {
                 text-decoration: underline;
             }
     
-    .form-theme form input[type=checkbox]{
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-    } 
+.form-theme form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+} 
 
-    .form-theme form input[type=checkbox]::after{
-        content: '';
-    }
+.form-theme form input[type=checkbox]::after{
+    content: '';
+}
 
-    .form-theme form input[type=text], 
-    input[type=email], 
-    input[type=password]{
-        display: block;
-        width: 100%;
-        border:none;
-        border-radius: 3px;
-        padding: 0.5rem 0.7rem;
-        margin: 0.3rem 0;
-    }
-    
-    .form-theme form input[type=text]:focus, 
-    input[type=email]:focus, 
-    input[type=password]:focus{
-        outline:0;
-        box-shadow: 0 0 3px 0 var(--color-gray-0);
-    }
+.form-theme form input[type=text], 
+input[type=email], 
+input[type=password]{
+    display: block;
+    width: 100%;
+    border:none;
+    border-radius: 3px;
+    padding: 0.5rem 0.7rem;
+    margin: 0.3rem 0;
+}
+
+.form-theme form input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus{
+    outline:0;
+    box-shadow: 0 0 3px 0 var(--color-gray-0);
+}
 
     
 
@@ -442,6 +474,9 @@ html,body {
             background-color: white;
         }
 
+.mobile-content-pusher{
+    height: 85px;
+}
  /* Popupm menu inside Bottom hamburger menu MOBILE */
 .popup-menu-m {
     height: 87%;
@@ -466,9 +501,9 @@ html,body {
             .popup-menu-m .container > a:first-child {
                 font-size: 1.5rem;
                 padding-top: 2rem;
-                padding-bottom: 2rem;
+                padding-bottom: 1.5rem;
                 color: rgb(14, 21, 61, 0.6);
-                
+                text-decoration: underline;
             }
                 .popup-menu-m a:hover, .popup-menu-m a:focus {
                     color: #f1f1f1;
@@ -713,7 +748,7 @@ html,body {
             .clothes-card .card .card-body p, .text-theme{
                 display: none;
             }
-            .clothes-card.card .card-body button{
+            .clothes-card .card .card-body button{
                 display: none;
             }
 
@@ -1082,6 +1117,9 @@ html,body {
 .menu-bottom-m{
     display: none;
 }
+.mobile-content-pusher{
+    display: none;
+}
 .main-menu > .container{
     display: flex;
     justify-content: space-between;
@@ -1215,16 +1253,16 @@ html,body {
     grid-row: 3 / -1;
     }
 
-.new-arrivals .row-cols-1{
+.clothes-card .row-cols-1{
     display: flex;
 }
-    .new-arrivals .card img{
+    .clothes-card .card img{
         height: 250px;
     }
-    .new-arrivals .card .card-body{
+    .clothes-card .card .card-body{
         height: 17%;
     }
-        .new-arrivals .card .card-body h1{
+        .clothes-card .card .card-body h1{
             font-size: 0.75rem;
         }
 
@@ -1376,11 +1414,7 @@ html,body {
         height: 300px;
         width: 50%;
     }
-
-
 }
-
-
 
 
 @media(min-width:992px) {
@@ -1446,23 +1480,23 @@ html,body {
             margin-top: 0.5rem;
         }
 
-.new-arrivals .row-cols-1{
+.clothes-card .row-cols-1{
     display: flex;   
 }
-    .new-arrivals .g-4{
+    .clothes-card .g-4{
         --bs-gutter-y: 1.5rem;
         --bs-gutter-x: 1.5rem;
     }
-        .new-arrivals .card .card-menu {
+        .clothes-card .card .card-menu {
             display: block;
         }
-        .new-arrivals .card .card-body p, .text-theme{
+        .clothes-card .card .card-body p, .text-theme{
             display: block;
         }
-    .new-arrivals .card img{
+    .clothes-card .card img{
         height: 400px;
     }
-    .new-arrivals .card .card-menu {
+    .clothes-card .card .card-menu {
             position: absolute;
             z-index: 1;
             right: 1rem;
@@ -1475,38 +1509,41 @@ html,body {
             background-color: white;
             transition: top 0.4s ease-in-out;
         }
-            .new-arrivals .card-menu li{
+            .clothes-card .card-menu li{
                 margin-top: 0.3rem;
                 margin-bottom: 0.3rem;
                 font-size: 1.0em;
             }
-                .new-arrivals .card-menu li a {
+                .clothes-card .card-menu li a {
                     color:var(--color-gray-0)
                 }
-                    .new-arrivals .card-menu li a:hover {
+                    .clothes-card .card-menu li a:hover {
                         color: var(--color-theme);
                     }
-                        .new-arrivals .card:hover .card-menu{
+                        .clothes-card .card-menu li:hover .card-menu-textbox{
+                            display: flex;
+                        }
+                        .clothes-card .card:hover .card-menu{
                                 top:20px;
                             }
 
-    .new-arrivals .card .card-body{
+    .clothes-card .card .card-body{
         height: 14%;
         transition: 0.3s ease-in-out;
     }
-        .new-arrivals .card:hover .card-body{
+        .clothes-card .card:hover .card-body{
             height: 40%;
         }
-        .new-arrivals .card .card-body h1{
+        .clothes-card .card .card-body h1{
             font-size: 1.125rem;
             margin-bottom: 2rem;
             transition: 0.3s ease-in-out;
         }
-            .new-arrivals .card:hover .card-body h1{
+            .clothes-card .card:hover .card-body h1{
                 margin-bottom: 0;
             }
 
-        .new-arrivals .card .card-body button{
+        .clothes-card .card .card-body button{
             display: block;
             background: transparent;
             color: var(--color-white);
@@ -1517,17 +1554,13 @@ html,body {
             margin: 0.5rem 0;
         }
 
-    .new-arrivals .card .card-background {
+    .clothes-card .card .card-background {
         transition: height 0.4s ease-in-out; 
     }
         .new-arrivals .card:hover .card-background{
             height: 100%;
         }
             
-
-
-
-
 
 .top-sellers .row{
     display:grid;
@@ -1536,8 +1569,6 @@ html,body {
     justify-items: center;
     margin: 0;
     padding: 0;
-    
-    
 }
 .top-sellers .g-4{
     --bs-gutter-x: 1.5rem;

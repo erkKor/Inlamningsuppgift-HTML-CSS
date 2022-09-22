@@ -67,7 +67,7 @@
                     </form>
                 </div>
                 <div class="menu-links">
-                    <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i>My account </a>
+                    <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i><span>My Account</span></a>
                     <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
                     <a class="menu-link"href=""><i class="fa-regular fa-shuffle"></i></a>
                     <a id="cart" class="menu-link" href="">
@@ -98,8 +98,72 @@
             </nav>
         </div>
     </header>
-
-    <!-- <section class="site-title">
+    <section class="mobile-menu-bar">
+        <div class="menu-bottom-m">
+            <button class="button menu-link"  id="myNavBtn" type="button" onclick="expandBar()" >
+                <i class="fa-regular fa-bars"></i>
+            </button>
+            <a class="menu-link" href="account.html"><i class="fa-regular fa-user"></i></a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="menu-link"href="#"><i class="fa-regular fa-shuffle"></i></a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="popup-menu-m" id="mobileMenu" >
+            <div class="container">
+                <a href="index.html">Home</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Services</a>
+                <a href="#">FAQs</a>
+                <a href="#">Contact</a>
+                <div>
+                    <ul class="accordion accordion-flush" id="accordionFlush">
+                        <li class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCategories">
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCategories" aria-expanded="false" aria-controls="flush-collapseCategories">
+                                <span>Browse Categories</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCategories" class="accordion-collapse collapse" aria-labelledby="flush-headingCategories" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body accordion-theme categories">
+                            <li><a class="dropdown-item" href="#">Clothes for men</a></li>
+                            <li><a class="dropdown-item" href="#">Clothes for women</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="accordion-item aco-btn">
+                        <h2 class="accordion-header" id="flush-headingLanguage">
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLanguage" aria-expanded="false" aria-controls="flush-collapseLanguage">
+                                <span>Language</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseLanguage" class="accordion-collapse collapse" aria-labelledby="flush-headingLanguage" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body accordion-theme language">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Swedish</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="accordion-item aco-btn">
+                        <h2 class="accordion-header" id="flush-headingCurrency">
+                            <button  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCurrency" aria-expanded="false" aria-controls="flush-collapseCurrency">
+                                <span>Currency</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCurrency" class="accordion-collapse collapse" aria-labelledby="flush-headingCurrency" data-bs-parent="#accordionFlush">
+                            <ul class="accordion-body accordion-theme currency">
+                            <li><a class="dropdown-item" href="#">Euro</a></li>
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-title">
         <div class="container">
             <h1>My Account</h1>
             <ul class="site-title-breadcrumb">
@@ -107,7 +171,7 @@
                 <li>My Account</li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
     <section class="signup-signin">   
         <div class="container form-theme">
@@ -127,11 +191,11 @@
                             <button type="submit" class="btn btn-lg btn-theme" >LOG IN</button>
                         </div>
                         <div class="remember-lostpw mb-4">
-                                <div class="remember-me">
-                                    <input id="signin_rememberMe" type="checkbox" class="me-2">
-                                    <label for="signin_rememberMe">Remember me</label>
-                                </div>
-                                <a href="">Lost your password?</a>
+                            <div class="remember-me">
+                                <input id="signin_rememberMe" type="checkbox" class="me-2">
+                                <label for="signin_rememberMe">Remember me</label>
+                            </div>
+                            <a href="">Lost your password?</a>
                         </div>
                         <div class="external-logins">
                             <div class="mb-4">
@@ -190,7 +254,6 @@
             </div>
         </div>
     </section>
-
     <script>
         function expandBar() {
             var x = document.getElementById("mobileMenu");

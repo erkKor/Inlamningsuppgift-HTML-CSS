@@ -3,12 +3,10 @@
     }
     
     .signup-signin .container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            align-items: start;
         }
         .signup-signin .card{
             width: 90%;
@@ -21,27 +19,16 @@
             }
         
     .signup-signin .remember-me{
-        display: none;
+        display: flex;
         align-items: center;
-        /* display: flex; */
     }
 .signup-signin .remember-lostpw{
     display: flex;
-    justify-content: center;
-
-    /* justify-content: space-between;
-    align-items: center; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-    /* .signup-signin .container{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 2rem;
-            align-items: start;
-        } */
 #registerCard{
-    display: none;
 }
 
 

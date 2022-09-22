@@ -53,7 +53,73 @@
                 </div>
             </div>
         </div>
-
+        <section class="mobile-menu-bar" >
+            <div class="menu-bottom-m" id="mobileMenuBar">
+                <div class="brand">
+                    <button class="button menu-link"  id="myNavBtn" type="button" onclick="expandBar()" >
+                        <i class="fa-regular fa-bars"></i>
+                    </button>
+                    <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
+                </div>
+                <div class="mobile-links">
+                    <a class="menu-link" href="account.html"><i class="fa-regular fa-user"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                    <a class="menu-link"href="#"><i class="fa-regular fa-magnifying-glass"></i></a>
+                </div>  
+            </div>
+            <div class="popup-menu-m" id="mobileMenu" >
+                <div class="container">
+                    <a href="index.html">Home</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Services</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact</a>
+                    <ul class="accordion accordion-flush" id="accordionFlush">
+                        <li class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCategories">
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCategories" aria-expanded="false" aria-controls="flush-collapseCategories">
+                                <span>Browse Categories</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCategories" class="accordion-collapse collapse" aria-labelledby="flush-headingCategories" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body accordion-theme categories">
+                            <li><a class="dropdown-item" href="#">Clothes for men</a></li>
+                            <li><a class="dropdown-item" href="#">Clothes for women</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="accordion-item aco-btn">
+                        <h2 class="accordion-header" id="flush-headingLanguage">
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLanguage" aria-expanded="false" aria-controls="flush-collapseLanguage">
+                                <span>Language</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseLanguage" class="accordion-collapse collapse" aria-labelledby="flush-headingLanguage" data-bs-parent="#accordionFlushExample">
+                            <ul class="accordion-body accordion-theme language">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Swedish</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="accordion-item aco-btn">
+                        <h2 class="accordion-header" id="flush-headingCurrency">
+                            <button  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCurrency" aria-expanded="false" aria-controls="flush-collapseCurrency">
+                                <span>Currency</span><i class="fa-solid fa-chevron-down ms-1"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCurrency" class="accordion-collapse collapse" aria-labelledby="flush-headingCurrency" data-bs-parent="#accordionFlush">
+                            <ul class="accordion-body accordion-theme currency">
+                            <li><a class="dropdown-item" href="#">Euro</a></li>
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
 
         <div class="main-menu">
@@ -100,71 +166,7 @@
         </div>
     </header>
 
-    <section class="mobile-menu-bar">
-        <div class="menu-bottom-m">
-            <button class="button menu-link"  id="myNavBtn" type="button" onclick="expandBar()" >
-                <i class="fa-regular fa-bars"></i>
-            </button>
-            <a class="menu-link" href="account.html"><i class="fa-regular fa-user"></i></a>
-            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-            <a class="menu-link"href="#"><i class="fa-regular fa-shuffle"></i></a>
-            <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i>
-            </a>
-        </div>
-        <div class="popup-menu-m" id="mobileMenu" >
-            <div class="container">
-                <a href="index.html">Home</a>
-                <a href="#">Newsletter</a>
-                <a href="#">Services</a>
-                <a href="#">FAQs</a>
-                <a href="#">Contact</a>
-                <div>
-                    <ul class="accordion accordion-flush" id="accordionFlush">
-                        <li class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingCategories">
-                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCategories" aria-expanded="false" aria-controls="flush-collapseCategories">
-                                <span>Browse Categories</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseCategories" class="accordion-collapse collapse" aria-labelledby="flush-headingCategories" data-bs-parent="#accordionFlushExample">
-                            <ul class="accordion-body accordion-theme categories">
-                            <li><a class="dropdown-item" href="#">Clothes for men</a></li>
-                            <li><a class="dropdown-item" href="#">Clothes for women</a></li>
-                            </ul>
-                        </div>
-                        </li>
-                        <li class="accordion-item aco-btn">
-                        <h2 class="accordion-header" id="flush-headingLanguage">
-                            <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLanguage" aria-expanded="false" aria-controls="flush-collapseLanguage">
-                                <span>Language</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseLanguage" class="accordion-collapse collapse" aria-labelledby="flush-headingLanguage" data-bs-parent="#accordionFlushExample">
-                            <ul class="accordion-body accordion-theme language">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Swedish</a></li>
-                            </ul>
-                        </div>
-                        </li>
-                        <li class="accordion-item aco-btn">
-                        <h2 class="accordion-header" id="flush-headingCurrency">
-                            <button  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCurrency" aria-expanded="false" aria-controls="flush-collapseCurrency">
-                                <span>Currency</span><i class="fa-solid fa-chevron-down ms-1"></i>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseCurrency" class="accordion-collapse collapse" aria-labelledby="flush-headingCurrency" data-bs-parent="#accordionFlush">
-                            <ul class="accordion-body accordion-theme currency">
-                            <li><a class="dropdown-item" href="#">Euro</a></li>
-                            <li><a class="dropdown-item" href="#">USD</a></li>
-                            <li><a class="dropdown-item" href="#">SEK</a></li>
-                            </ul>
-                        </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 
     <section class="showcase">
@@ -749,18 +751,6 @@
         </div>
     </footer>  
 
-    <div class="mobile-content-pusher"></div>
-
-
-
-
-
-
-
-
-
-
-    <!-- <div style="height: 4000px;"></div> -->
   <script>
         function expandBar() {
             var x = document.getElementById("mobileMenu");
@@ -780,7 +770,16 @@
         }
 
 
-
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mobileMenuBar").style.top = "0";
+            } else {
+                document.getElementById("mobileMenuBar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+}
     </script>
     
      

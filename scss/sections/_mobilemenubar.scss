@@ -1,0 +1,145 @@
+.menu-bottom-m {
+    border-bottom:1px solid var(--color-gray-1);
+    background-color: var(--color-white);
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    transition: 0.3s ease-in-out;
+
+    .brand{
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+       }
+
+    img{
+        width: 140px;
+        padding: 0 0.5rem;
+    }
+
+    .menu-link{
+        text-decoration: none;
+        color: var(--color-theme-dark);
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .button{
+        border: none;
+        padding:0;
+        background-color: white;
+        margin-top: 0.3rem;
+    }
+    }
+
+ /* Popupm menu inside Bottom hamburger menu MOBILE */
+.popup-menu-m {
+    height: 100%;
+    width: 85%;
+    display: none;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    background-color: rgba(32,211,194, 0.9);
+    background-color: var(--color-theme);
+    font-weight: var(--font-weight-bold);
+
+    a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: var(--color-theme-dark);
+        display: block;
+        transition: 0.3s;
+        text-align: start;
+
+        &:first-child {
+            font-size: 1.5rem;
+            padding-top: 2rem;
+            padding-bottom: 1.5rem;
+            color: rgb(14, 21, 61, 0.6);
+            text-decoration: underline;
+        }
+        &:focus {
+            color: #f1f1f1;
+        }
+    }
+    button {
+        background-color: var(--color-theme);
+        border: none;
+        display: block;
+        font-size: 1rem;
+        font-weight: var(--font-weight-bold);
+        padding: 0;
+
+        span {
+            font-size: 1.7rem;
+        }
+    }
+    .aco-btn {
+        span{
+            font-size: 1.3rem;
+            color: rgb(14, 21, 61, 0.6);
+        }
+        i{
+            color: rgb(14, 21, 61, 0.6);
+            font-size: 0.8rem;
+        }
+    }
+    
+    }
+
+                    
+    /* Accordion inside Hamburger menu MOBILE*/
+    .popup-menu-m .accordion{
+        padding:0;
+    }
+    .popup-menu-m .accordion .accordion-item{
+        border: none;
+    }
+        .popup-menu-m .accordion li{
+            background-color: var(--color-theme);
+            list-style: none; 
+        }
+        .popup-menu-m .accordion .dropdown-item{
+            padding: 0;
+            margin: 0;
+        }
+        .popup-menu-m .accordion .accordion-body{
+            padding: 0;
+            margin-left: 1.2rem;
+        }
+            .popup-menu-m .accordion .accordion-theme a{
+                font-size: 1.2rem;
+                font-weight: var(--font-weight-bold);
+                color: rgb(14, 21, 61, 0.67);
+                padding-top: 7px;
+            }
+                .popup-menu-m .accordion .accordion-item:nth-child(2){
+                    margin-top: 4rem;
+                }
+                .popup-menu-m .accordion .language li:last-child{
+                    padding-bottom: 12px;
+                }
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px) {
+
+    .menu-bottom-m{
+        display: none;
+    }
+    
+}

@@ -100,14 +100,18 @@
     </header>
     <section class="mobile-menu-bar">
         <div class="menu-bottom-m">
-            <button class="button menu-link"  id="myNavBtn" type="button" onclick="expandBar()" >
-                <i class="fa-regular fa-bars"></i>
-            </button>
-            <a class="menu-link" href="account.html"><i class="fa-regular fa-user"></i></a>
-            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-            <a class="menu-link"href="#"><i class="fa-regular fa-shuffle"></i></a>
-            <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i>
-            </a>
+            <div class="brand">
+                <button class="button menu-link slide-toggle"  id="myNavBtn" type="button" onclick="expandBar()" >
+                    <i class="fa-regular fa-bars"></i>
+                </button>
+                <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
+            </div>
+            <div class="mobile-links" id="mobileLinks">
+                <a class="menu-link" href="account.html"><i class="fa-regular fa-user"></i></a>
+                <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                <a class="menu-link"href="#"><i class="fa-regular fa-magnifying-glass"></i></a>
+            </div>  
         </div>
         <div class="popup-menu-m" id="mobileMenu" >
             <div class="container">

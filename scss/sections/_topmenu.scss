@@ -1,0 +1,105 @@
+.top-menu {
+    background-color: $color-theme;
+    color: white;
+    height: 40px;
+    display: none;
+    // @include md { display: flex; }
+
+    &> .container{
+        height: 100%;
+        align-items: center;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        // @include sm { justify-content: space-between; }
+    }
+
+    .site-settings {
+        display: flex;
+
+        .dropdown-theme{
+            background-color: $color-theme;
+            color: $color-white;
+            border: none;
+
+            button{
+                background-color: $color-theme;
+                color: $color-white;
+                border: none;
+
+                &:hover{
+                    color: $color-theme-dark;
+                }
+            }
+            .dropdown-menu{
+                background-color: $color-theme;
+                color: $color-white;
+                border: none;
+
+                .dropdown-item{
+                    background-color: $color-theme;
+                    color: $color-white;
+                    border: none;
+                    width: 100%;
+                    margin: 0;
+
+                    &:hover{
+                        background-color: $color-dark;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-links{
+        display:none;
+        // @include md { display: block;}
+
+        .site-links{
+        display: none;
+        // @include lg { display: inline;}
+        } 
+
+        a{
+            color:$color-white;
+            text-decoration: none;
+            margin: 1.4rem;
+            transition: color 0.4s;
+            &:hover{color: $color-theme-dark;}
+        }
+
+        .social-media{
+            margin-left: 1.2rem;
+            font-size: $font-size-14;
+
+            a{margin: 0 0.3rem;}
+            a:last-child{margin: 0 0 0 0.1rem;}
+        }
+     }  
+
+}
+    
+        
+@media (min-width: 578px) {
+    .top-menu > .container{
+        justify-content: space-between;
+    }
+}   
+
+
+@media(min-width:768px) {
+    .top-menu{
+        display: flex;
+    }
+    .top-menu .menu-links{
+        display: block;
+    }
+}
+@media(min-width:992px) {
+    .top-menu .menu-links .site-links{
+        display: inline;
+    }
+}
+
+//@include "size" {ex. display:block}

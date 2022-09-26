@@ -28,7 +28,6 @@
     --font-size-36: 3.00rem;
     --font-size-60: 5.00rem;
 
-
     --border-radius-small: 8px;
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
@@ -61,11 +60,6 @@ body{
         color: var(--color-white);
     }
 
-    .btn-theme:hover {
-        background-color: var(--color-theme-dark);
-        color: var(--color-white);
-    }
-    
 .btn-white {
         background-color: var(--color-white);
         color: var(--color-theme);
@@ -99,7 +93,7 @@ body{
         .section-title h1 {
             font-family: var(--font-play);
             font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-36);
+            font-size: var(--font-size-24);
         }
             .section-title h1 span {
                 color: var(--color-theme);
@@ -107,7 +101,6 @@ body{
             
         .section-title p {
             margin: 1rem 0;
-            padding-bottom: 3rem;
         }
 
 .bg-theme{
@@ -491,17 +484,18 @@ input[type=password]:focus{
         }
  /* Popupm menu inside Bottom hamburger menu MOBILE */
 .popup-menu-m {
-    height: 87%;
-    width: 100%;
+    height: 100%;
+    width: 85%;
     display: none;
     position: fixed;
-    z-index: 4;
+    z-index: 8;
     top: 0;
-    left: 0;
     background-color: rgba(32,211,194, 0.9);
     background-color: var(--color-theme);
     font-weight: var(--font-weight-bold);
     }
+
+
         .popup-menu-m .container a {
             text-decoration: none;
             font-size: 1.7rem;
@@ -652,12 +646,28 @@ input[type=password]:focus{
 }
      .webshop-info .container{
         max-width: 1600px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 0.8rem;
+        justify-content: center;
+        /* display: flex;
         justify-content: space-evenly;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column; */
     }
+
     .webshop-info .info-box{
+        background-color: var(--color-theme-light);
+        justify-content: center;
+        border-radius: var(--border-radius-small);
+        height: 160px;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+        padding: 1rem;
+        /* box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.31); */
+    }
+    /* .webshop-info .info-box{
         background-color: var(--color-theme-light);
         padding: 0.5rem;
         display: flex;
@@ -669,7 +679,7 @@ input[type=password]:focus{
         border-radius: var(--border-radius-small);
         transition: all 0.3s ease-in-out;
         /* box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.31); */
-    }
+ 
         .webshop-info .info-box h1{
             color: var(--color-theme);
             font-size: 1rem;
@@ -680,6 +690,9 @@ input[type=password]:focus{
                 color:var(--color-white);
                 
             }
+        .webshop-info .info-box p{
+            font-size: 0.8rem;
+        }  
         .webshop-info .info-box:hover{
             background-color: var(--color-theme);
             color: var(--color-white);
@@ -697,8 +710,10 @@ input[type=password]:focus{
 .shop-by-category .grid{
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 200px));
-    grid-template-rows:repeat(4, minmax(100px, 200px));
-    gap: 0.8rem;
+    grid-template-rows:repeat(4, minmax(75px, 50px));
+    /* grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-template-rows:repeat(4, minmax(100px, 200px)); */
+    gap: 0.5rem;
     justify-content: center;
 }
     .shop-by-category .section-title{
@@ -718,13 +733,14 @@ input[type=password]:focus{
             background-color:var(--color-theme-dark) ;
             color: var(--color-theme);
             padding: 0.5rem 0.4rem;
+            padding-top: 0.1rem;
             font-weight: var(--font-weight-medium);
             min-width: 50%;
             border-top-right-radius: var(--border-radius-small);
             position: absolute;
             bottom: 0;
             left:0;
-            height: 38px;
+            height: 25px;
             transition: height 0.4s, background-color 0.4s;
         }
             .shop-by-category .category-box .category-box-title span{
@@ -745,7 +761,7 @@ input[type=password]:focus{
     grid-template-rows:repeat(2, 220px);
 }
         .clothes-card .card .card-menu {
-                display: none;
+            display: none;
         }
         
         .clothes-card .card .card-body{
@@ -841,7 +857,7 @@ input[type=password]:focus{
             
         }
             .flash-sale .flash-sale-banner h1{
-                font-size: 22px;
+                font-size: 1.8rem;
                 font-family: var(--font-play);
                 font-weight: var(--font-weight-bold);
             }
@@ -984,11 +1000,11 @@ input[type=password]:focus{
                 border: 1px solid var(--color-gray-2);
                 font-size: 0.9rem;
                 padding-left: 1.2rem; 
-            }
+            } 
             #subscribeForm button{
                 position: absolute;
-                top:3.3px;
-                left:55.7%;
+                top:3.8px;
+                left:56%;
                 height: 85%;
                 background-color:var(--color-theme);
                 color: var(--color-white);
@@ -1053,7 +1069,7 @@ input[type=password]:focus{
             }
 
 .signup-signin{
-    margin-top: 0;
+    margin-top: 4rem;
     }
     .signup-signin .my-4{
         margin: 0!important;
@@ -1187,6 +1203,12 @@ input[type=password]:focus{
 }   
 
 @media(min-width:768px) {
+.section-title h1 {
+    font-size: var(--font-size-36);
+}
+    .section-title p {
+        padding-bottom: 3rem;
+    }
 .top-menu{
     display: flex;
 }
@@ -1257,7 +1279,6 @@ input[type=password]:focus{
     text-align: left;
 }
 .webshop-info .container{
-    max-width: 1600px;
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 1.4rem;
@@ -1275,6 +1296,12 @@ input[type=password]:focus{
     /* box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.31); */
 }
 
+.webshop-info .info-box h1{
+    font-size:1.2rem;
+}  
+.webshop-info .info-box p{
+    font-size:1.1rem;
+}  
 
 .shop-by-category .category-box .category-box-title{
     background-color:var(--color-theme-dark) ;

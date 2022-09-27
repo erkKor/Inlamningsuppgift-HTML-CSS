@@ -335,6 +335,7 @@ input[type=password]:focus{
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
+                transition: 0.3s ease-in-out;
             }
                 .top-menu .site-settings .dropdown-theme button:hover{
                     color: var(--color-theme-dark);
@@ -416,9 +417,6 @@ input[type=password]:focus{
             .main-menu .menu-links .menu-link:hover {
                 color: var(--color-theme);
             }
-            .main-menu .menu-links .menu-link:first-child {
-                margin:0 2.4rem 0 0;
-            }
             .main-menu .menu-links .menu-link:last-child {
                 margin:0 0 0 0.8rem ;
             }
@@ -428,7 +426,7 @@ input[type=password]:focus{
             font-size:var(--font-size-16) ;
         }
 
-        .main-menu .menu-links #cart {
+        .main-menu .menu-links .popup-badge {
             position: relative;
         }
             .main-menu .menu-links .badge {
@@ -438,7 +436,7 @@ input[type=password]:focus{
                 background-color: var(--color-theme);
                 transition: background-color 0.4s;
             }
-            .main-menu .menu-links #cart:hover .badge {
+            .main-menu .menu-links .popup-badge:hover .badge {
                 background-color: var(--color-theme-dark);
             }
 
@@ -494,7 +492,6 @@ input[type=password]:focus{
     background-color: var(--color-theme);
     font-weight: var(--font-weight-bold);
     }
-
 
         .popup-menu-m .container a {
             text-decoration: none;
@@ -644,42 +641,23 @@ input[type=password]:focus{
 .webshop-info{
     padding: 2rem 0;
 }
-     .webshop-info .container{
-        max-width: 1600px;
-        display: grid;
-        grid-template-columns: 48% 48%;
-        gap: 0.8rem;
-        justify-content: center;
-        /* display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column; */
-    }
-
+.webshop-info .container{
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 0.8rem;
+    justify-content: center;
+}
     .webshop-info .info-box{
-        background-color: var(--color-theme-light);
         justify-content: center;
+        text-align: center;
+        background-color: var(--color-theme-light); 
         border-radius: var(--border-radius-small);
         height: 160px;
-        text-align: center;
         padding: 20px;
         margin: 0;
         padding: 1rem;
-        /* box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.31); */
     }
-    /* .webshop-info .info-box{
-        background-color: var(--color-theme-light);
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin:0.5rem 2rem;
-        flex:1;
-        border-radius: var(--border-radius-small);
-        transition: all 0.3s ease-in-out;
-        /* box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.31); */
- 
         .webshop-info .info-box h1{
             color: var(--color-theme);
             font-size: 1rem;
@@ -688,7 +666,6 @@ input[type=password]:focus{
         }
             .webshop-info .info-box:hover h1{
                 color:var(--color-white);
-                
             }
         .webshop-info .info-box p{
             font-size: 0.8rem;
@@ -769,17 +746,14 @@ input[type=password]:focus{
         padding-left: 0.5rem;
         white-space: nowrap;
     }
-    .clothes-card .card .card-body h1{
-                font-size: 0.78rem;
-            }
-            /* .clothes-card .card .card-body p, .text-theme{
-                display: none;
-            } */
-            .clothes-card .card .card-body button{
-                display: none;
-            }
+        .clothes-card .card .card-body h1{
+            font-size: 0.78rem;
+        }
+        .clothes-card .card .card-body button{
+            display: none;
+        }
 
-/* New-Customer Offer -- BAR */
+/* New-Customer Offer -- Bar */
 .new-customer-offer{
     margin-top: 4rem;
     background-color: var(--color-gray-1);
@@ -832,7 +806,7 @@ input[type=password]:focus{
 /* Featured Products --  CLASSES ARE IN General --   .section-title / .card    */
 
 
-/* Flash-sale -- BAR */
+/* Flash Sale -- Bar */
 .flash-sale{
     margin-top: 4rem;
     background-color: var(--color-theme-dark);
@@ -947,9 +921,6 @@ input[type=password]:focus{
             .top-sellers .card .card-body h1{
                 font-size: 0.78rem;
             }
-            /* .top-sellers .card .card-body p, .text-theme{
-                display: none;
-            } */
             .top-sellers .card .card-body button{
                 display: none;
             }
@@ -957,7 +928,7 @@ input[type=password]:focus{
 
 
 
-/* Subscribe Now*/
+/* Subscribe Now -- Bar */
 .subscribe-now{
     margin-top: 6rem;
     height: 160px;
@@ -1029,7 +1000,7 @@ input[type=password]:focus{
     align-items: center;
 }
 
-/* ACCOUNT PAGE */
+/* #### Account Page classes #### */
 .site-title{
     background-color: var(--color-theme-light-dark);
     color: var(--color-white);
@@ -1096,14 +1067,17 @@ input[type=password]:focus{
             .signup-signin .card .card-text{
                 display: none;
             }
-            .signup-signin .remember-me{
+            .signup-signin .card .remember-me{
                 display: none;
                 align-items: center;
             }
-            .signup-signin .remember-lostpw{
+            .signup-signin .card .remember-lostpw{
                 display: flex;
                 justify-content: center;
                 align-items: center; 
+            }
+            .signup-signin .card .error-message{
+                color:#e60404;
             }
 
             .external-logins{
@@ -1142,13 +1116,15 @@ input[type=password]:focus{
                     color: white;
                     padding-left: 10px;
                     margin-bottom: 0.5rem;
+                    transition: background-color 0.3s ease-in-out;
                 }       
                 .external-socialmedia-buttons .facebook-button span {
                     margin-right: auto;
                     margin-left: auto;
                 }
                 .external-socialmedia-buttons .facebook-button:hover{
-                    background-color: #1c3864;
+                    background-color: #09234d;
+                    /* background-color: #1c3864; */
                 }
                     .external-socialmedia-buttons .google-button{
                         display: flex;
@@ -1161,13 +1137,14 @@ input[type=password]:focus{
                         color: white;
                         padding-left: 10px;
                         margin-bottom: 0.5rem;
+                        transition: background-color 0.3s ease-in-out;
                     }
                     .external-socialmedia-buttons .google-button span{
                         margin-right: auto;
                         margin-left: auto;
                     }
                         .external-socialmedia-buttons .google-button:hover{
-                            background-color: #1c3864;
+                            background-color: #09234d;
                         }
             .no-member{
                 display: flex;
@@ -1191,8 +1168,7 @@ input[type=password]:focus{
         #registerCard .card-title{
             margin-bottom: 1rem;
     }
-    
-/* ACCOUNT PAGE */
+/* #### Account Page End #### */
 
 
 /* Media */
@@ -1589,12 +1565,27 @@ input[type=password]:focus{
     display: block;
 }
 
-.webshop-info .container{
-    max-width: 1600px;
+.webshop-info .container {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
 }
+    .webshop-info .info-box {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 2rem;
+    flex: 1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.15);
+    }
+        .webshop-info .info-box img {
+        margin-right: 1.5rem;
+        filter: brightness(100%);
+        transition: all 0.3s ease-in-out;
+        }
+        .webshop-info .info-box p{
+            max-width: 250px;
+        }  
 
 .shop-by-category .grid{
     grid-template-columns: repeat(5, minmax(100px, 249px));

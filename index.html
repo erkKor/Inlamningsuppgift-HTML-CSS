@@ -13,7 +13,7 @@
     <link href="css/style.css" rel="stylesheet">
     
 </head>
-<body>
+<body id="body">
     <!-- Whole bar at the top -->
      <header>
         <div class="top-menu"> 
@@ -55,10 +55,11 @@
                 </div>
             </div>
         </div>
+        <!-- Menu bar at the top in Mobile version -->
         <section class="mobile-menu-bar" >
             <div class="menu-bottom-m" id="mobileMenuBar">
                 <div class="brand">
-                    <button class="button menu-link slide-toggle"  id="myNavBtn" type="button" onclick="expandBar()" >
+                    <button class="button menu-link"  id="" type="button" onclick="slideLeft()" >
                         <i class="fa-regular fa-bars"></i>
                     </button>
                     <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
@@ -70,10 +71,11 @@
                     <a class="menu-link"href="#"><i class="fa-regular fa-magnifying-glass"></i></a>
                 </div>  
             </div>
-            <div class="popup-menu-m box" id="mobileMenu" >
+            <!-- Hamburger popupmenu -->
+            <div class="popup-menu-m" id="mobileMenu">
                 <div class="container">
-                    <button class="button menu-link slide-toggle"  id="myNavBtn" type="button" onclick="expandBar()" >
-                        <i class="fa-regular fa-x"></i>
+                    <button class="button close"  id="" type="button" onclick="slideLeft()" >
+                        <i class="fa-solid fa-x"></i>
                     </button>
                     <a href="index.html">Home</a>
                     <a href="#">Newsletter</a>
@@ -123,6 +125,11 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="aside" id="opacityBar">
+                <button class="button menu-link"  id="closeBtn" type="button" onclick="slideLeft()" >
+                    <i class="fa-regular fa-x"></i>
+                </button>
             </div>
         </section>
 

@@ -480,19 +480,20 @@ input[type=password]:focus{
             background-color: white;
             margin-top: 0.3rem;
         }
+
  /* Popupm menu inside Bottom hamburger menu MOBILE */
 .popup-menu-m {
     height: 100%;
     width: 85%;
-    display: none;
+    left:0;
     position: fixed;
     z-index: 8;
     top: 0;
     background-color: rgba(32,211,194, 0.9);
     background-color: var(--color-theme);
     font-weight: var(--font-weight-bold);
+    transition: left 0.3s ease-out;
     }
-
         .popup-menu-m .container a {
             text-decoration: none;
             font-size: 1.7rem;
@@ -501,9 +502,9 @@ input[type=password]:focus{
             transition: 0.3s;
             text-align: start;
         }
-            .popup-menu-m .container > a:first-child {
+            .popup-menu-m .container > a:nth-child(2) {
                 font-size: 1.5rem;
-                padding-top: 2rem;
+                padding-top: 1.5rem;
                 padding-bottom: 1.5rem;
                 color: rgb(14, 21, 61, 0.6);
                 text-decoration: underline;
@@ -513,13 +514,19 @@ input[type=password]:focus{
                 }
 
             .popup-menu-m button {
-                background-color: var(--color-theme);
-                border: none;
                 display: block;
+                border: none;
                 font-size: 1rem;
                 font-weight: var(--font-weight-bold);
+                background-color: var(--color-theme);
                 padding: 0;
             }
+                .popup-menu-m button.close{
+                    position: absolute;
+                    font-size: 1.8rem;
+                    right: 15px;
+                    top:16px;
+                }
                 .popup-menu-m button span {
                     font-size: 1.7rem;
                 }
@@ -531,7 +538,31 @@ input[type=password]:focus{
                         color: rgb(14, 21, 61, 0.6);
                         font-size: 0.8rem;
                     }
+              
                     
+    .aside{
+        display: none;
+        position: absolute;
+        top:0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(45,45,45,.65);
+        z-index: 7;
+    }
+        .aside button{
+            position: absolute;
+            top: 0;
+            right:0;
+            left: -350px;
+            width: 55px;
+            height: 66px;
+            background-color: rgba(45,45,45,.65);
+            border: none;
+            color: white;
+            font-size: 2rem;
+            transition: 0.5s ease-in-out;
+        }
+
     /* Accordion inside Hamburger menu MOBILE*/
     .popup-menu-m .accordion{
         padding:0;
@@ -1067,31 +1098,33 @@ input[type=password]:focus{
             .signup-signin .card .card-text{
                 display: none;
             }
-            .signup-signin .card .remember-me{
-                display: none;
-                align-items: center;
-            }
+            
             .signup-signin .card .remember-lostpw{
                 display: flex;
                 justify-content: center;
                 align-items: center; 
             }
+                .signup-signin .card .remember-lostpw .remember-me{
+                    display: none;
+                    align-items: center;
+                } 
+        
             .signup-signin .card .error-message{
                 color:#e60404;
             }
 
-            .external-logins{
+            .signup-signin .card .external-logins{
                 position: relative;
                 display: flex;
                 justify-content: center;
                 z-index: 0;
             }
-                .external-logins .label{
+            .signup-signin .card .external-logins .label{
                     background-color: var(--color-gray-4);
                     padding:0 0.8rem;
                     z-index: 2;
                 }
-                .external-logins .line{
+                .signup-signin .card .external-logins .line{
                     position: absolute;
                     top:10px;
                     left: 0;
@@ -1101,11 +1134,11 @@ input[type=password]:focus{
                     opacity: 0.6;       
                 }
 
-            .external-socialmedia-buttons{
+                .signup-signin .card .external-socialmedia-buttons{
                 display: flex;
                 flex-direction: column;
             }
-                .external-socialmedia-buttons .facebook-button{
+            .signup-signin .card .external-socialmedia-buttons .facebook-button{
                     display: flex;
                     align-items: center;
                     background-color: #3B5998;
@@ -1118,15 +1151,15 @@ input[type=password]:focus{
                     margin-bottom: 0.5rem;
                     transition: background-color 0.3s ease-in-out;
                 }       
-                .external-socialmedia-buttons .facebook-button span {
+                .signup-signin .card .external-socialmedia-buttons .facebook-button span {
                     margin-right: auto;
                     margin-left: auto;
                 }
-                .external-socialmedia-buttons .facebook-button:hover{
+                .signup-signin .card .external-socialmedia-buttons .facebook-button:hover{
                     background-color: #09234d;
                     /* background-color: #1c3864; */
                 }
-                    .external-socialmedia-buttons .google-button{
+                .signup-signin .card .external-socialmedia-buttons .google-button{
                         display: flex;
                         align-items: center;
                         background-color: #4285F4;
@@ -1139,28 +1172,28 @@ input[type=password]:focus{
                         margin-bottom: 0.5rem;
                         transition: background-color 0.3s ease-in-out;
                     }
-                    .external-socialmedia-buttons .google-button span{
+                    .signup-signin .card .external-socialmedia-buttons .google-button span{
                         margin-right: auto;
                         margin-left: auto;
                     }
-                        .external-socialmedia-buttons .google-button:hover{
+                    .signup-signin .card .external-socialmedia-buttons .google-button:hover{
                             background-color: #09234d;
                         }
-            .no-member{
+            .signup-signin .card .no-member{
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            .no-member-btn{
+            .signup-signin .card .no-member-btn{
                 background-color: var(--color-gray-4);
                 border: none;
                 color: var(--color-theme);
                 height: 45px;
             }
-                .no-member-btn:hover{
+            .signup-signin .card .no-member-btn:hover{
                     color: var(--color-theme-dark);
                     text-decoration: underline;
-                }
+            }
 
     #registerCard{
         display: none;
@@ -1532,14 +1565,14 @@ input[type=password]:focus{
             justify-content: space-between;
         }
 
-    .external-socialmedia-buttons{
+        .signup-signin .card .external-socialmedia-buttons{
         flex-direction: row;
         justify-content: space-between;
     }
-        .external-socialmedia-buttons .facebook-button{
+        .signup-signin .card .external-socialmedia-buttons .facebook-button{
             width: 45%;
         }       
-        .external-socialmedia-buttons .google-button{
+        .signup-signin .card .external-socialmedia-buttons .google-button{
             width: 45%;
         }
 
@@ -1785,14 +1818,22 @@ padding: 0;
         padding: 1rem 1.5rem;
         margin-bottom: 1rem;
     }
-        .signup-signin .external-socialmedia-buttons .facebook-button{
+
+    .signup-signin .card .remember-lostpw{
+        justify-content: space-between;
+    }
+        .signup-signin .card .remember-lostpw .remember-me{
+            display: flex;
+            align-items: center;
+        }
+        .signup-signin .card .external-socialmedia-buttons .facebook-button{
             width: 49%;
         }       
-        .signup-signin .external-socialmedia-buttons .google-button{
+        .signup-signin .card .external-socialmedia-buttons .google-button{
             width: 49%;
         }
     
-    .signup-signin .no-member{
+    .signup-signin .card .no-member{
         display: none;
     }
     #registerCard{

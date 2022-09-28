@@ -1,32 +1,24 @@
-// function expandBar() {
-//     var x = document.getElementById("mobileMenu");
-//     var mobLinks = document.getElementById("mobileLinks");
-//     if (x.style.display === "none") {
-//         x.style.display = "block";
-//     } else {
-//         x.style.display = "none";
-//     }
-// }
-
-// $(document).ready(function () {
-
-//     $(".slide-toggle").hide();
-//     $(".show-hide").show();
-
-//     $('.show-hide').click(function () {
-//     $(".slide-toggle").toggle("slide");
-//     });
-
-// });
-
-    $(document).ready(function(){
-    $(".slide-toggle").click(function(){
-        $(".box").animate({
-            width: "toggle"
-        });
-    });
-});
-
+// Slide left s
+function slideLeft() {
+    var x = document.getElementById("mobileMenu");
+    var y = document.getElementById("mobileLinks")
+    var z = document.getElementById("opacityBar")
+    var b = document.getElementById("body")
+    var cross = document.getElementById("closeBtn")
+    if (x.style.left === "-400px") {
+        x.style.left = "0";
+        y.style.display = "none";
+        z.style.display = "block";
+        b.style.overflow = "hidden";
+        cross.style.left = "auto";
+    } else {
+        x.style.left = "-400px";
+        y.style.display = "block";
+        z.style.display = "none";
+        b.style.overflow = "auto";
+        cross.style.left = "-350px"
+    }
+}
 
 // Log in / Register show hide
 function registerShow() {
@@ -53,3 +45,32 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+
+
+
+
+
+// Slide left using width
+//     $(document).ready(function(){
+//     $(".slide-toggle").click(function(){
+//         $(".box").animate({
+//             width: "toggle"
+//         });
+//     });
+// });
+
+
+
+// Original hide/show for mobile menu
+// function expandBar() {
+//     var x = document.getElementById("mobileMenu");
+//     var mobLinks = document.getElementById("mobileLinks");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
+

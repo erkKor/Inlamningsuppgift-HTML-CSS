@@ -4,19 +4,17 @@ function slideLeft() {
     var y = document.getElementById("mobileLinks")
     var z = document.getElementById("opacityBar")
     var b = document.getElementById("body")
-    var cross = document.getElementById("closeBtn")
+    
     if (x.style.left === "-400px") {
         x.style.left = "0";
         y.style.display = "none";
         z.style.display = "block";
         b.style.overflow = "hidden";
-        cross.style.left = "auto";
     } else {
         x.style.left = "-400px";
         y.style.display = "block";
         z.style.display = "none";
         b.style.overflow = "auto";
-        cross.style.left = "-350px"
     }
 }
 

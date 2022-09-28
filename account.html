@@ -7,6 +7,7 @@
     <title>Shopping is more fun - Kenkata</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -99,9 +100,9 @@
         </div>
     </header>
     <section class="mobile-menu-bar">
-        <div class="menu-bottom-m">
+        <div class="menu-top-m">
             <div class="brand">
-                <button class="button menu-link slide-toggle"  id="myNavBtn" type="button" onclick="expandBar()" >
+                <button class="button menu-link slide-toggle"  id="myNavBtn" type="button" onclick="slideLeft()" >
                     <i class="fa-regular fa-bars"></i>
                 </button>
                 <a href="index.html"><img src="images/logotype.svg" alt="Kenkata logotyp"></a>
@@ -186,12 +187,12 @@
                     <form id="signinForm" class="">
                         <div class="my-4">
                             <label for="signin_email">Email adress <span class="text-theme">*</span></label>
-                            <input id="signin_email" type="email" autocomplete="email" class="" required>
+                            <input id="signin_email" type="email" autocomplete="email" required>
                             <span class="error-message">Invalid email (example)</span>
                         </div>
                         <div class="mb-4">
                             <label for="signin_password">Password <span class="text-theme">*</span></label>
-                            <input id="signin_password" type="password" autocomplete="current-password" class="" required>
+                            <input id="signin_password" type="password" autocomplete="current-password" required>
                             <span class="error-message"></span>
                         </div>
                         <div class="mb-4 d-grid">
@@ -265,32 +266,6 @@
             </div>
         </div>
     </section>
-    <script>
-        function expandBar() {
-            var x = document.getElementById("mobileMenu");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-
-        function registerShow() {
-            var x = document.getElementById("loginCard");
-            var y = document.getElementById("registerCard");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-
-            } else {
-                x.style.display = "none";
-                y.style.display = "block";
-            }
-        }
-
-
-
-    </script>
 <!-- <div style="height: 4000px;"></div> -->
 </body>
 </html>

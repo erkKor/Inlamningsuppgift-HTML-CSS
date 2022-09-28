@@ -14,8 +14,8 @@
     
 </head>
 <body id="body">
-    <!-- Whole bar at the top -->
-     <header>
+     <header> 
+        <!-- Top menu, theme-colored bar at the top of site -->
         <div class="top-menu"> 
             <div class="container">
                 <div class="site-settings" >
@@ -56,8 +56,8 @@
             </div>
         </div>
         <!-- Menu bar at the top in Mobile version -->
-        <section class="mobile-menu-bar" >
-            <div class="menu-bottom-m" id="mobileMenuBar">
+        <section class="mobile-menu" >
+            <div class="menu-top-m" id="mobileMenuBar">
                 <div class="brand">
                     <button class="button menu-link"  id="" type="button" onclick="slideLeft()" >
                         <i class="fa-regular fa-bars"></i>
@@ -71,12 +71,15 @@
                     <a class="menu-link"href="#"><i class="fa-regular fa-magnifying-glass"></i></a>
                 </div>  
             </div>
-            <!-- Hamburger popupmenu -->
+            <!-- Hamburger popup-menu, themecolored menu that slides in -->
             <div class="popup-menu-m" id="mobileMenu">
                 <div class="container">
                     <button class="button close"  id="" type="button" onclick="slideLeft()" >
                         <i class="fa-solid fa-x"></i>
                     </button>
+                    <!-- <button class="button menu-link"  id="closeBtn" type="button" onclick="slideLeft()" >
+                        <i class="fa-regular fa-x"></i>
+                    </button> -->
                     <a href="index.html">Home</a>
                     <a href="#">Newsletter</a>
                     <a href="#">Services</a>
@@ -123,17 +126,25 @@
                             </ul>
                         </div>
                         </li>
+                        <span class="social-media">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+                        <span>© Copyright 2022 Kenkata</span>
                     </ul>
                 </div>
             </div>
             <div class="aside" id="opacityBar">
-                <button class="button menu-link"  id="closeBtn" type="button" onclick="slideLeft()" >
+                <!-- <button class="button menu-link"  id="closeBtn" type="button" onclick="slideLeft()" >
                     <i class="fa-regular fa-x"></i>
-                </button>
+                </button> -->
             </div>
         </section>
 
-
+        <!-- Brandlogo / Searchbar / Account icons -->
         <div class="main-menu">
             <div class="container">
                 <div class="brand">
@@ -159,7 +170,7 @@
                     </a>
                 </div>
             </div>
-            <nav>
+            <nav> <!-- Browse categories & Special offer button -->
                 <div class="container">
                     <div class="browse-categories">
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -183,7 +194,7 @@
 
     
 
-
+    <!-- Showcase with big picture and shop button  -->
     <section class="showcase">
         <div class="container">
             <div class="showcase-body">
@@ -195,7 +206,7 @@
         </div>
     </section>
 
-
+    <!-- Info Boxes, 4 of them about the company -->
     <section class="webshop-info">
         <div class="container">
             <div class="info-box">
@@ -228,7 +239,7 @@
             </div>
         </div>
     </section>
-
+    <!--  Shop by Category, grid layout for 7 boxes -->
      <section class="shop-by-category">
         <div class="container">
             <div class="section-title">
@@ -236,7 +247,6 @@
                 <img src="images/wave-line.svg" alt="waveline">
                 <p>We always try to give you the best product within a fast and reliable way</p>
             </div>
-
             <div class="grid">
                 <a href="#" id="category-box-1" class="category-box">
                     <div class="category-box-title">Men
@@ -278,6 +288,7 @@
         </div>
     </section> 
 
+    <!-- New Arrivals, card section of 4 -->
     <section class="new-arrivals">
         <div class="container clothes-card">
             <div class="section-title">
@@ -429,6 +440,7 @@
               </div>
     </section>  
 
+    <!-- New Customer offer, 30% off banner and sample text with button -->
     <section class="new-customer-offer">
         <div class="container">
             <div class="newcu-discount">
@@ -444,6 +456,7 @@
         </div>
     </section>
 
+    <!-- Featured Products, another card section of 4 -->
    <section class="featured-products">
     <div class="new-arrivals clothes-card">
         <div class="container">
@@ -596,8 +609,8 @@
             </div>
     </div>
     </section> 
-
-      <section class="flash-sale">
+    <!-- Flash Sale, sale banner and timer circles with button -->
+    <section class="flash-sale">
         <div class="container">
             <div class="flash-sale-banner">
                 <h1><strong>FLASH SALE <span></span></strong></h1>
@@ -626,7 +639,7 @@
             </div>
         </div>
     </section>
-    
+    <!-- Top sellers, another card section of 3 #Grid layout -->
      <section class="top-sellers">
         <div class="container">
             <div class="section-title">
@@ -745,7 +758,7 @@
         </div>
     </section> 
 
-
+    <!-- Subscribe now, subscribe to newsletter -->
     <section class="subscribe-now">
         <div class="container">
             <div class="subscribe-box">
@@ -759,18 +772,11 @@
             <div class="gray-box"></div>
         </div>
     </section>
-
+    <!-- Footer, bottom of site with copyright brandname -->
     <footer class="footer">
         <div class="container">
            <span>© Copyright 2022 Kenkata</span>
         </div>
     </footer>  
-
-  <script>
-        
-    </script>
-    
-     
-
 </body>
 </html>

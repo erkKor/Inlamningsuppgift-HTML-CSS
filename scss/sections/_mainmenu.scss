@@ -4,6 +4,7 @@
     .brand{
         margin: 1rem 0.5rem;
         flex: 2;
+        display: none;
     }
 
     .search{
@@ -113,6 +114,9 @@
             padding-top: 2.2rem;
             padding-bottom: 2.2rem;
 
+            .brand{
+                display: block;
+            }
             .search{
                 display: block;
                 padding-left: 1.5rem;
@@ -169,3 +173,6 @@
 
     
 }
+
+
+

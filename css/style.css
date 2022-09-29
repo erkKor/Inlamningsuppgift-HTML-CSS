@@ -761,8 +761,6 @@ a{
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 200px));
     grid-template-rows:repeat(4, minmax(75px, 50px));
-    /* grid-template-columns: repeat(2, minmax(100px, 200px));
-    grid-template-rows:repeat(4, minmax(100px, 200px)); */
     gap: 0.5rem;
     justify-content: center;
 }
@@ -1592,45 +1590,6 @@ a{
             max-width: 250px;
         }  
 
-.shop-by-category .grid{
-    grid-template-columns: repeat(5, minmax(100px, 249px));
-    grid-template-rows:repeat(3, minmax(100px, 249px));
-    gap: 0.8rem;
-} 
-    #category-box-1 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        }
-    #category-box-2 {
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-        }
-    #category-box-3 {
-        grid-column: 4 / -1;
-        grid-row: 1 / 3;
-        }
-    #category-box-4 {
-        grid-column: 1 / 3;
-        grid-row: 2 / -1;
-        }
-    #category-box-5 {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        }
-    #category-box-6 {
-        grid-column: 3 / 5;
-        grid-row: 3 / -1;
-        }    
-    #category-box-7 {
-        grid-column: 5 / -1;
-        grid-row: 3 / -1;
-        }
-        .shop-by-category .category-box .category-box-title span{
-            display:block;
-            color:var(--color-white);
-            font-size: 0.8rem;
-            margin-top: 0.5rem;
-        }
 
 
 .clothes-card .g-4{

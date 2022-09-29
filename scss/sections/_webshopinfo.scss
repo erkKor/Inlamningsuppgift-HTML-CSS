@@ -1,0 +1,103 @@
+.webshop-info{
+    padding: 2rem 0;
+    .container{
+        max-width: 1600px;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 0.8rem;
+        justify-content: center;
+        
+        .info-box{
+            justify-content: center;
+            text-align: center;
+            background-color: $color-theme-light; 
+            border-radius: $border-radius-small;
+            height: 160px;
+            padding: 20px;
+            margin: 0;
+            padding: 1rem;
+            
+            img{
+                height: 42px;
+            }
+            h1{
+                color: $color-theme;
+                font-size: 1rem;
+                font-weight: $font-weight-medium;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover{
+                background-color: $color-theme;
+                color: $color-white;
+                img{
+                    filter:brightness(1000%) ;
+                    transition: all 0.3s ease-in-out;
+                }
+                h1{
+                    color:$color-white;
+                }
+            }
+            p{
+                font-size: 0.8rem;
+            }  
+            
+        }
+    }
+}
+
+@media (min-width:768px) {
+.webshop-info {
+    .container{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 1.4rem;
+        justify-content: center;
+
+        .info-box{
+            background-color: $color-theme-light;
+            justify-content: center;
+            border-radius: $border-radius-small;
+            height: 180px;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            padding: 1rem;
+            img{
+                height: auto;
+            }
+            h1{
+                font-size:1.2rem;
+            }  
+            p{
+                font-size:1.1rem;
+            }  
+        }
+    }
+}      
+}
+
+@media(min-width:992px) {
+    .webshop-info {
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            .info-box {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0 2rem;
+                flex: 1;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.15);
+                img {
+                    margin-right: 1.5rem;
+                    filter: brightness(100%);
+                    transition: all 0.3s ease-in-out;
+                }
+                p{
+                    max-width: 250px;
+                }  
+            }
+        } 
+    }
+}

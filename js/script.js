@@ -1,18 +1,18 @@
 // Slide left s
 function slideLeft() {
     var x = document.getElementById("mobileMenu");
-    var y = document.getElementById("mobileLinks")
+    // var y = document.getElementById("mobileLinks")
     var z = document.getElementById("opacityBar")
     var b = document.getElementById("body")
     
-    if (x.style.left === "-400px") {
+    if (x.style.left === "-800px") {
         x.style.left = "0";
-        y.style.display = "none";
+        // y.style.display = "none";
         z.style.display = "block";
         b.style.overflow = "hidden";
     } else {
-        x.style.left = "-400px";
-        y.style.display = "block";
+        x.style.left = "-800px";
+        // y.style.display = "block";
         z.style.display = "none";
         b.style.overflow = "auto";
     }

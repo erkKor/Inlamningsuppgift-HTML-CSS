@@ -16,6 +16,7 @@
             padding: 20px;
             margin: 0;
             padding: 1rem;
+            box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.15);
             
             img{
                 height: 42px;
@@ -88,7 +89,6 @@
                 padding: 0 2rem;
                 flex: 1;
                 transition: all 0.3s ease-in-out;
-                box-shadow: 5px 5px 5px 1px rgba(19, 204, 179, 0.15);
                 img {
                     margin-right: 1.5rem;
                     filter: brightness(100%);

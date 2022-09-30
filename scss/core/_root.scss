@@ -56,7 +56,7 @@ body{
     h1 {
         font-family: $font-play;
         font-weight: $font-weight-bold;
-        font-size: $font-size-36;
+        font-size: $font-size-24;
         span { color: $color-theme; }
     }
        
@@ -307,6 +307,13 @@ color: $color-product-outofstock;
 .text-theme{
 color:$color-theme;
 }
+a{
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color:var(--color-theme-dark);
+    }
+}
+    
 
 @include md{
 .clothes-card{
@@ -322,6 +329,15 @@ color:$color-theme;
         }
     }
 }
+.section-title {
+    h1 {
+        font-size: $font-size-36;
+    }
+    p {
+        padding-bottom: 3rem;
+    }
+}
+
 }
 
 @include lg{

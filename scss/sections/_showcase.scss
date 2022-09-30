@@ -1,18 +1,16 @@
 .showcase{
-    background-color: var(--color-gray-3);
+    background-color: $color-gray-3;
     margin-top: 4rem;
-
     .showcase-body{
         text-align: center;
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
-
         h1{
             font-size: 3.5rem;
-            font-family: var(--font-play);
+            font-family: $font-play;
             strong{
-                font-weight: var(--font-weight-bold);
-                color:var(--color-theme);
+                font-weight: $font-weight-bold;
+                color:$color-theme;
                 display: block;
             }
         }
@@ -20,34 +18,33 @@
             margin: 2rem 0rem;   
         }
     }
-    
-    .showcase img{
+
+    img{
         display: none;
     }
 }
 
-@media (min-width: 578px) {
+@include sm {
 .showcase{
     margin-top: 0;
     .container{
         text-align: left;
     }
-
 }
 }   
 
-@media(min-width:992px) {
-    .showcase {
-        .container{
-            display: flex;
-            text-align: left;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 0;
-            padding-bottom: 0;
-        }
+@include lg {
+.showcase {
+    .container{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
     }
-    .showcase img{
+    img{
         display: block;
     }
+}
 }

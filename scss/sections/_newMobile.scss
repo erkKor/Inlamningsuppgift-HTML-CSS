@@ -1,0 +1,94 @@
+.popup-menu-m {
+    height: 100%;
+    width: 85%;
+    left:-800px;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    background-color: rgba(32,211,194, 0.9);
+    background-color: var(--color-theme);
+    font-weight: var(--font-weight-bold);
+    transition: left 0.3s ease-out;
+    button {
+        border: none;
+        font-size: 1rem;
+        font-weight: var(--font-weight-bold);
+        background-color: var(--color-theme);
+        padding: 0;
+
+        &.close{
+            position: absolute;
+            font-size: 1.8rem;
+            right: 15px;
+            top:16px;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: var(--color-theme-dark);
+        display: block;
+        transition: 0.3s;
+        text-align: start;
+        &:hover,&:focus{
+            color: #f1f1f1;
+        }
+    }
+    > a:nth-child(2) {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        color: rgb(14, 21, 61, 0.6);
+        text-decoration: underline;
+    }
+    .social-media{
+        display: flex;
+        margin-top: 4rem;
+        justify-content: space-evenly;
+    }
+    // Accordion
+    .accordion{
+        padding:0;
+        .accordion-item{
+            &:nth-child(2){
+                margin-top: 4rem;
+            }
+            &:last-child{
+                margin-bottom: 1rem;
+            }
+        }
+        li{
+            background-color: var(--color-theme);
+            list-style: none; 
+            border:none;
+            button{
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+            .aco-btn{
+                button{
+                    span {
+                        font-size: 1.3rem;
+                        color: rgb(14, 21, 61, 0.6);
+                    }
+                    i {
+                        color: rgb(14, 21, 61, 0.6);
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .accordion-body{
+                padding: 0;
+                margin-left: 1.2rem;
+                a{
+                    font-size: 1.2rem;
+                    font-weight: var(--font-weight-bold);
+                    color: rgb(14, 21, 61, 0.67);
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+    

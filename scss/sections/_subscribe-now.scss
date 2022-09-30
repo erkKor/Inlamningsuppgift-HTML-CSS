@@ -1,0 +1,100 @@
+.subscribe-now{
+    margin-top: 6rem;
+    height: 160px;
+    background-color: $color-gray-4;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .subscribe-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+                font-family: $font-play;
+                font-weight: $font-weight-bold;
+                padding-left: 10px;
+                span {
+                    color: $color-theme;
+                }
+            }
+
+            p{
+                padding-left: 10px;
+                font-size: 12px;
+            }
+
+            #subscribeForm{
+                border-radius: $border-radius-medium;
+                height: 45px;
+                position: relative;
+                padding-left:5px;
+                input{
+                    position: absolute;
+                    border-radius: $border-radius-medium;
+                    height: 100%;
+                    width: 95%;
+                    outline: none;
+                    border: 1px solid $color-gray-2;
+                    font-size: 0.9rem;
+                    padding-left: 1.2rem; 
+                } 
+                button{
+                    position: absolute;
+                    top:3px;
+                    left:56%;
+                    height: 85%;
+                    background-color:$color-theme;
+                    color: $color-white;
+                    border-radius:$border-radius-medium;
+                    border: none;
+                    padding:0 1.5rem;
+                    transition: 0.3s ease-in-out;
+                }
+            } 
+        }
+        .gray-box{
+            background-color: $color-gray-1;
+            height: 160px;
+            width: 130px;
+        }
+    }
+}
+
+@include md{
+.subscribe-now{
+    margin-top: 6rem;
+    height: 300px;
+    .container{
+        padding: 0 12px;
+        .subscribe-box{
+            h1 {
+                font-size: $font-size-36;
+                padding: 0;
+            }
+
+            p{
+                max-width: 60%;
+                padding: 0.5rem 0.2rem;
+            }
+
+            #subscribeForm{
+                input{
+                    width: 70%;
+                }
+                button{
+                    top:3px;
+                    left:47.4%;
+                    &:hover{
+                        background-color: $color-theme-dark;
+                    }
+                }
+            }
+        }
+        .gray-box{
+            height: 300px;
+            width: 50%;
+        }
+    }
+}
+}

@@ -3,30 +3,24 @@
     color: white;
     height: 40px;
     display: none;
-    // @include md { display: flex; }
-
     &> .container{
         height: 100%;
         align-items: center;
         padding: 0;
         display: flex;
         justify-content: flex-end;
-        // @include sm { justify-content: space-between; }
     }
-
     .site-settings {
         display: flex;
-
         .dropdown-theme{
             background-color: $color-theme;
             color: $color-white;
             border: none;
-
             button{
                 background-color: $color-theme;
                 color: $color-white;
                 border: none;
-
+                transition: 0.3s ease-in-out;
                 &:hover{
                     color: $color-theme-dark;
                 }

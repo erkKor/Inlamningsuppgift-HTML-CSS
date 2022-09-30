@@ -10,12 +10,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script defer src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
- 
+    <link href="css/style.min.css" rel="stylesheet">
     
 </head>
-<body id="body">
-     <header> 
+<body>
+    <header>
         <!-- Top menu, theme-colored bar at the top of site -->
         <div class="top-menu"> 
             <div class="container">
@@ -78,14 +77,13 @@
                     <button class="close"  id="" type="button" onclick="slideLeft()" >
                         <i class="fa-solid fa-x"></i>
                     </button>
-                    <!-- <button class="button menu-link"  id="closeBtn" type="button" onclick="slideLeft()" >
-                        <i class="fa-regular fa-x"></i>
-                    </button> -->
-                    <a href="index.html">Home</a>
-                    <a href="#">Newsletter</a>
-                    <a href="#">Services</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">Contact</a>
+                    <div class="main-links">
+                        <a href="index.html">Home</a>
+                        <a href="#">Newsletter</a>
+                        <a href="#">Services</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Contact</a>
+                    </div>  
                     <ul class="accordion accordion-flush" id="accordionFlush">
                         <li class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingCategories">
@@ -139,12 +137,8 @@
                 </div>
             </div>
             <div class="aside" id="opacityBar">
-                <!-- <button class="button menu-link"  id="closeBtn" type="button" onclick="slideLeft()" >
-                    <i class="fa-regular fa-x"></i>
-                </button> -->
             </div>
         </section>
-
         <!-- Main-menu, Brandlogo / Searchbar / Account icons -->
         <div class="main-menu">
             <div class="container">
@@ -167,11 +161,11 @@
                     <a class="menu-link popup-badge" href="">
                         <span class="badge rounded-pill">99+</span>
                         <i class="fa-regular fa-cart-shopping me-1"></i>
-                        <span>€99999.00</span>
+                        <span class="span-text">€99999.00</span>
                     </a>
                 </div>
             </div>
-            <nav> <!-- Browse categories & Special offer button -->
+            <nav class="browse-specoff">
                 <div class="container">
                     <div class="browse-categories">
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -192,9 +186,6 @@
             </nav>
         </div>
     </header>
-
-    
-
     <!-- Showcase with big picture and shop button  -->
     <section class="showcase">
         <div class="container">
@@ -206,7 +197,6 @@
             <img src="images/showcase-image.svg" alt="two people standing">
         </div>
     </section>
-
     <!-- Info Boxes, 4 of them about the company -->
     <section class="webshop-info">
         <div class="container">
@@ -241,7 +231,7 @@
         </div>
     </section>
     <!--  Shop by Category, grid layout for 7 boxes -->
-     <section class="shop-by-category">
+    <section class="shop-by-category">
         <div class="container">
             <div class="section-title">
                 <h1>SHOP BY <span>CATEGORY</span></h1>
@@ -287,8 +277,7 @@
                 </a>
             </div>
         </div>
-    </section> 
-
+    </section>
     <!-- New Arrivals, card section of 4 -->
     <section class="new-arrivals">
         <div class="container clothes-card">
@@ -438,9 +427,8 @@
                         <div class="card-background"></div>
                     </div>
                 </div>
-              </div>
+                </div>
     </section>  
-
     <!-- New Customer offer, 30% off banner and sample text with button -->
     <section class="new-customer-offer">
         <div class="container">
@@ -456,9 +444,8 @@
             </div>
         </div>
     </section>
-
     <!-- Featured Products, card section of 4 -->
-   <section class="featured-products">
+    <section class="featured-products">
     <div class="new-arrivals clothes-card">
         <div class="container">
             <div class="section-title">
@@ -641,7 +628,7 @@
         </div>
     </section>
     <!-- Top sellers, card section of 3 with Grid layout -->
-     <section class="top-sellers">
+    <section class="top-sellers">
         <div class="container">
             <div class="section-title">
                 <h1>TOP <span>SELLERS</span></h1>
@@ -758,7 +745,6 @@
 
         </div>
     </section> 
-
     <!-- Subscribe now, subscribe to newsletter -->
     <section class="subscribe-now">
         <div class="container">

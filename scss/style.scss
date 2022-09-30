@@ -2,9 +2,17 @@
 @import "./core/breakpoints";
 @import "./core/root";
 
-@import "./sections/topmenu";
-@import "./sections/mainmenu";
-@import "./sections/mobilemenubar";
+@import "./sections/top-menu";
+@import "./sections/main-menu";
+@import "./sections/mobile-menu-bar";
 @import "./sections/showcase";
-@import "./sections/webshopinfo";
-@import "./sections/shopbycategory";
+@import "./sections/webshop-info";
+@import "./sections/shop-by-category";
+@import "./sections/newcustomer-offer";
+@import "./sections/flash-sale";
+@import "./sections/top-sellers";
+@import "./sections/subscribe-now";
+@import "./sections/footer";
+
+@import "./sections/account-page/site-title";
+@import "./sections/account-page/signup-signin";

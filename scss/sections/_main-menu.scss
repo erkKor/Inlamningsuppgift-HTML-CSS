@@ -1,12 +1,10 @@
 .main-menu{
     background-color: $color-white;
-
     .brand{
         margin: 1rem 0.5rem;
         flex: 2;
         display: none;
     }
-
     .search{
         flex: 4;
         display: none;
@@ -23,9 +21,6 @@
             &:hover {
                 color: $color-theme;
             }
-            &:first-child {
-                margin:0 2.4rem 0 0;
-            }
             &:last-child {
                 margin:0 0 0 0.8rem ;
             }
@@ -35,20 +30,21 @@
             }
         }
 
-        #cart {
+        .popup-badge {
             position: relative;
             &:hover .badge {
                 background-color: $color-theme-dark;
             }
+            .badge {
+                position: absolute;
+                top: -1.3rem;
+                left: 0.9rem;
+                background-color: $color-theme;
+                transition: background-color 0.4s;
+            }
         }
 
-        .badge {
-            position: absolute;
-            top: -1.3rem;
-            left: 0.9rem;
-            background-color: $color-theme;
-            transition: background-color 0.4s;
-        }
+        
     }
 }
 
@@ -105,7 +101,7 @@
 }
 
 
-@media (min-width:768px){
+@include md{
     .main-menu {
         &>.container{
             display: flex;
@@ -166,13 +162,22 @@
             }
         }
         
-        .browse-specoff {
+        > nav {
             display: flex;
         }
     }
-
-    
 }
+
+@media(max-width:1200px){
+.main-menu{
+    .menu-link{
+        span{
+            display: none;
+        }
+    }
+}
+}
+
 
 
 

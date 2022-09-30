@@ -1,0 +1,201 @@
+.signup-signin{
+    margin-top: 5rem;
+    .my-4{
+        margin: 0!important;
+    }
+    .mb-4{
+        margin-bottom: 1rem!important;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        .card{
+            width: 90%;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            .card-body{
+                padding: 0;
+            }
+            .card-text{
+                display: none;
+            }
+            .remember-lostpw{
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                .remember-me{
+                    display: none;
+                    align-items: center;
+                }
+            }
+            .external-logins{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                .label{
+                    background-color: $color-gray-4;
+                    padding:0 0.8rem;
+                    z-index: 2;
+                }
+                .line{
+                    position: absolute;
+                    top:10px;
+                    left: 0;
+                    right: 0;
+                    border: 1px solid $color-gray-1;
+                    z-index: -1;
+                    opacity: 0.6;       
+                }
+            }
+            .external-socialmedia-buttons{
+                display: flex;
+                flex-direction: column;
+                .facebook-button{
+                    display: flex;
+                    align-items: center;
+                    background-color: #3B5998;
+                    border: none;
+                    border-radius: 8px;
+                    width: 100%;
+                    height: 45px;
+                    color: white;
+                    padding-left: 10px;
+                    margin-bottom: 0.5rem;
+                    transition: background-color 0.3s ease-in-out;
+                    span {
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    &:hover{
+                        background-color: #09234d;
+                    }
+                }  
+                .google-button{
+                    display: flex;
+                    align-items: center;
+                    background-color: #4285F4;
+                    border: none;
+                    border-radius: 8px;
+                    width: 100%;
+                    height: 45px;
+                    color: white;
+                    padding-left: 10px;
+                    margin-bottom: 0.5rem;
+                    transition: background-color 0.3s ease-in-out;
+                    span{
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    &:hover{
+                        background-color: #09234d;
+                    }
+                }     
+            }
+
+            .no-member{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .no-member-btn{
+                    background-color: $color-gray-4;
+                    border: none;
+                    color: $color-theme;
+                    height: 45px;
+                    &:hover{
+                        color: $color-theme-dark;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            .error-message{
+                color:#e60404;
+            }
+        }
+    }
+
+#registerCard{
+    display: none;
+}
+}
+
+
+@include md{
+.signup-signin{
+    margin-top: 2rem;
+    .my-4{
+        margin-top: 1.5rem!important;
+        margin-bottom: 1.5rem!important;
+    }
+    .mb-4{
+        margin-bottom: 1.5rem!important;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+        .card{
+            .card-text{
+                display: block;
+            }
+            .remember-lostpw{
+                justify-content: space-between;
+                .remember-me{
+                    display: flex;
+                }
+            }
+            .external-socialmedia-buttons{
+                flex-direction: row;
+                justify-content: space-between;
+                .facebook-button{
+                    width: 45%;
+                }       
+                .google-button{
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+}
+
+@include lg{
+.signup-signin{
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: start;
+        .card{
+            width: 100%;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            .remember-lostpw{
+                justify-content: space-between;
+                .remember-me{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .external-socialmedia-buttons{
+                .facebook-button{
+                    width: 49%;
+                }       
+                .google-button{
+                    width: 49%;
+                }
+            }
+            .no-member{
+                display: none;
+            }
+        }
+    }
+#registerCard{
+    display: block;
+}
+}
+}
+   

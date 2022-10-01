@@ -698,7 +698,7 @@ a{
     padding: 2rem 0;
 }
 .webshop-info .container{
-    max-width: 1600px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
     gap: 0.8rem;
